@@ -1,0 +1,1000 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
+</head>
+<body>
+<title>АрендаID Türkiye</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Golos+Text:wght@400;500;600&family=PT+Serif:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@500;600&display=swap">
+<style>
+/* Layout: sticky registry bar, single centered column (max 1080px); contracts render as a paper sheet in the document serif; ID codes look like rubber-stamp ink. */
+:root{
+  --bg:#EEF2F1; --surface:#FFFFFF; --surface-2:#F5F8F7; --ink:#14221F; --muted:#5A6B66; --line:#D2DCD9;
+  --accent:#1D5C4C; --accent-ink:#FFFFFF; --accent-soft:#DCEBE5;
+  --stamp:#4A3C9C; --stamp-soft:#ECE9F8;
+  --good:#1E7A4F; --good-soft:#DAF0E3; --warn:#8F5600; --warn-soft:#FBEBD0; --bad:#A3302A; --bad-soft:#F8DEDB;
+  --paper:#FFFFFF; --paper-ink:#1C1C1A; --ph:#8A5A00; --ph-bg:#FFF3D6;
+  --f-head:'Manrope',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --f-body:'Golos Text',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --f-doc:'PT Serif',Georgia,'Times New Roman',serif;
+  --f-mono:'JetBrains Mono',ui-monospace,Consolas,monospace;
+  --r:10px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0E1614; --surface:#15201D; --surface-2:#1A2724; --ink:#E3EBE8; --muted:#9AABA6; --line:#2A3A36;
+  --accent:#62BA9E; --accent-ink:#0A1210; --accent-soft:#1C3530;
+  --stamp:#AFA2F2; --stamp-soft:#262150;
+  --good:#71D4A2; --good-soft:#173326; --warn:#E9B565; --warn-soft:#3A2C12; --bad:#F08C82; --bad-soft:#3D1C1A;
+  --paper:#18221F; --paper-ink:#E5ECE9; --ph:#F0C26E; --ph-bg:#3A2D10; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0E1614; --surface:#15201D; --surface-2:#1A2724; --ink:#E3EBE8; --muted:#9AABA6; --line:#2A3A36;
+  --accent:#62BA9E; --accent-ink:#0A1210; --accent-soft:#1C3530;
+  --stamp:#AFA2F2; --stamp-soft:#262150;
+  --good:#71D4A2; --good-soft:#173326; --warn:#E9B565; --warn-soft:#3A2C12; --bad:#F08C82; --bad-soft:#3D1C1A;
+  --paper:#18221F; --paper-ink:#E5ECE9; --ph:#F0C26E; --ph-bg:#3A2D10; color-scheme:dark}
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.55}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--surface)}
+h1,h2,h3{font-family:var(--f-head);text-wrap:balance;line-height:1.2;margin:0}
+h1{font-size:clamp(26px,4.4vw,40px);font-weight:800;letter-spacing:-.02em}
+h2{font-size:22px;font-weight:700}
+h3{font-size:16px;font-weight:700}
+p{margin:0}
+a{color:var(--accent)}
+.wrap{max-width:1080px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+
+/* top bar */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--surface);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:12px 20px;flex-wrap:wrap;padding-block:10px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-family:var(--f-head);font-weight:800;font-size:18px}
+.mark{width:30px;height:30px;border:2px solid var(--stamp);border-radius:6px;display:grid;place-items:center;font-family:var(--f-mono);font-size:11px;color:var(--stamp);transform:rotate(-6deg)}
+nav{display:flex;flex-wrap:wrap;gap:2px;flex:1}
+nav a{padding:6px 10px;border-radius:7px;text-decoration:none;color:var(--muted);font-weight:500;font-size:14px}
+nav a:hover{color:var(--ink);background:var(--surface-2)}
+nav a.on{color:var(--accent);background:var(--accent-soft)}
+.who{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--muted)}
+
+main{padding-block:28px 64px}
+.stack{display:flex;flex-direction:column;gap:20px}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:16px}
+.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:20px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.card.soft{background:var(--surface-2)}
+.muted{color:var(--muted)}
+.small{font-size:13px}
+.eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:600}
+.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.between{justify-content:space-between}
+ul.clean{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:4px}
+
+/* buttons */
+.btn{appearance:none;border:1px solid var(--line);background:var(--surface);color:var(--ink);font:600 14px/1 var(--f-body);padding:10px 14px;border-radius:8px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:6px}
+.btn:hover{border-color:var(--accent)}
+.btn.pri{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.btn.pri:hover{filter:brightness(1.08)}
+.btn.good{background:var(--good);border-color:var(--good);color:var(--accent-ink)}
+.btn.bad{color:var(--bad);border-color:var(--bad)}
+.btn.sm{padding:7px 10px;font-size:13px}
+.btn:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+/* forms */
+form{display:flex;flex-direction:column;gap:16px}
+fieldset{border:1px solid var(--line);border-radius:var(--r);padding:16px;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,210px),1fr));gap:12px 14px;min-width:0}
+legend{font-family:var(--f-head);font-weight:700;padding:0 6px}
+label{display:flex;flex-direction:column;gap:5px;font-size:13px;color:var(--muted);font-weight:500;min-width:0}
+label.wide{grid-column:1/-1}
+input,select{font:15px var(--f-body);color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:7px;padding:9px 10px;width:100%;min-width:0}
+input.mono{font-family:var(--f-mono);text-transform:uppercase;letter-spacing:.04em}
+.check{flex-direction:row;align-items:flex-start;gap:8px;color:var(--ink)}
+.check input{width:auto;margin-top:3px}
+.hint{font-size:12px;color:var(--muted)}
+.hint.ok{color:var(--good)} .hint.no{color:var(--bad)} .hint.warn{color:var(--warn)}
+
+/* stamp-style code chips */
+.code{font-family:var(--f-mono);font-weight:600;color:var(--stamp);background:var(--stamp-soft);border:1.5px dashed var(--stamp);border-radius:6px;padding:2px 7px;white-space:nowrap;letter-spacing:.03em;font-size:.92em}
+.code.big{font-size:clamp(20px,5vw,30px);padding:8px 16px;display:inline-block;transform:rotate(-1.5deg)}
+.pill{font-size:12px;font-weight:600;padding:3px 9px;border-radius:99px;white-space:nowrap;background:var(--surface-2);color:var(--muted);border:1px solid var(--line)}
+.pill.good{background:var(--good-soft);color:var(--good);border-color:transparent}
+.pill.warn{background:var(--warn-soft);color:var(--warn);border-color:transparent}
+.pill.bad{background:var(--bad-soft);color:var(--bad);border-color:transparent}
+.pill.stamp{background:var(--stamp-soft);color:var(--stamp);border-color:transparent}
+
+/* hero & steps */
+.hero{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:28px;align-items:center}
+@media (max-width:820px){.hero{grid-template-columns:1fr}}
+.hero p.lead{font-size:17px;color:var(--muted);max-width:60ch;margin-top:12px}
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:14px;counter-reset:s}
+.steps li{counter-increment:s;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:16px;display:flex;flex-direction:column;gap:6px}
+.steps li::before{content:attr(data-step) " " counter(s);font-size:12px;font-weight:700;color:var(--accent);letter-spacing:.06em;text-transform:uppercase}
+.mini-doc{background:var(--paper);color:var(--paper-ink);border:1px solid var(--line);border-radius:6px;padding:18px;font-family:var(--f-doc);font-size:13.5px;line-height:1.6;box-shadow:0 10px 30px -18px rgba(0,0,0,.35);display:flex;flex-direction:column;gap:8px;transform:rotate(.6deg)}
+.mini-doc .ttl{text-align:center;font-weight:700;letter-spacing:.04em}
+.strike{text-decoration:line-through;color:var(--muted)}
+
+/* templates */
+.tpl-card h3{font-size:18px}
+.tpl-card .ic{width:40px;height:40px;border-radius:9px;background:var(--accent-soft);color:var(--accent);display:grid;place-items:center}
+.tpl-card ul{font-size:13.5px}
+.tpl-card .row{margin-top:auto}
+
+/* paper contract */
+.paper{background:var(--paper);color:var(--paper-ink);border:1px solid var(--line);border-radius:4px;padding:clamp(20px,5vw,56px);font-family:var(--f-doc);font-size:15.5px;line-height:1.7;max-width:820px;margin:0 auto;width:100%;min-width:0}
+.paper h2.doc-t{font-family:var(--f-doc);text-align:center;font-size:20px;letter-spacing:.03em;text-transform:uppercase}
+.paper .doc-sub{text-align:center;margin-top:4px}
+.paper .meta{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin:22px 0 14px;font-style:italic}
+.paper h4{font-family:var(--f-doc);font-size:15.5px;margin:22px 0 6px;text-transform:uppercase;letter-spacing:.04em}
+.paper p{margin:0 0 6px;text-align:justify;hyphens:auto}
+.paper .ph{background:var(--ph-bg);color:var(--ph);font-family:var(--f-body);font-size:.82em;padding:1px 5px;border-radius:4px;white-space:nowrap}
+.paper .fill{font-weight:700}
+.essentials{border:1.5px solid var(--paper-ink);padding:12px 16px;margin:12px 0 4px;font-size:14px}
+.essentials table{width:100%;border-collapse:collapse}
+.essentials td{padding:3px 0;vertical-align:top}
+.essentials td:first-child{width:42%;padding-right:12px;font-style:italic}
+.sig{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:24px;margin-top:28px}
+.sig > div{border-top:1px solid var(--paper-ink);padding-top:10px;display:flex;flex-direction:column;gap:8px}
+.qrrow{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.qr{width:96px;height:96px;padding:4px;background:#FFFFFF;border:1px solid var(--line);border-radius:4px;cursor:pointer;flex:none}
+.qr img,.qr canvas{width:100%!important;height:100%!important;display:block}
+.qr.fallback{display:grid;place-items:center;font:11px var(--f-body);color:#333;text-align:center}
+.sigline{border-bottom:1px solid var(--paper-ink);height:28px;max-width:220px}
+
+/* requests & data */
+.req{border:1px solid var(--line);border-radius:var(--r);padding:14px 16px;display:flex;flex-direction:column;gap:10px;background:var(--surface)}
+.req.attn{border-color:var(--warn);box-shadow:inset 4px 0 0 var(--warn)}
+.req.live{border-color:var(--good);box-shadow:inset 4px 0 0 var(--good)}
+.kv{display:grid;grid-template-columns:minmax(120px,190px) minmax(0,1fr);gap:6px 14px;font-size:14px}
+.kv dt{color:var(--muted)}
+.kv dd{margin:0;font-weight:500;overflow-wrap:anywhere}
+.reveal{position:relative;overflow:hidden;user-select:none;-webkit-user-select:none;border:1.5px solid var(--good);border-radius:var(--r);padding:18px;background:var(--surface)}
+.wm{position:absolute;inset:-40%;display:flex;flex-wrap:wrap;gap:40px 60px;transform:rotate(-24deg);opacity:.09;pointer-events:none;font:600 13px var(--f-mono);color:var(--ink);align-content:center}
+.timer{font-family:var(--f-mono);font-size:26px;font-weight:600;font-variant-numeric:tabular-nums;color:var(--good)}
+.bar{height:5px;background:var(--surface-2);border-radius:9px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--good);transition:width 1s linear}
+.wait{display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--warn);animation:pulse 1.2s infinite}
+@keyframes pulse{50%{opacity:.25}}
+@media (prefers-reduced-motion:reduce){.wait{animation:none}.bar i{transition:none}}
+
+.msg{display:grid;grid-template-columns:auto minmax(0,1fr);gap:4px 12px;padding:10px 0;border-top:1px solid var(--line);font-size:13.5px}
+.msg:first-child{border-top:0}
+.tbl-wrap{overflow-x:auto}
+table.list{width:100%;border-collapse:collapse;font-size:14px}
+table.list th{text-align:left;font-size:12px;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.05em;padding:8px 10px;border-bottom:1px solid var(--line);white-space:nowrap}
+table.list td{padding:10px;border-bottom:1px solid var(--line);vertical-align:middle}
+.notice{border-radius:var(--r);padding:12px 14px;font-size:14px;background:var(--warn-soft);color:var(--ink);border:1px solid var(--line)}
+.notice b{color:var(--warn)}
+.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:8px;font-size:14px;z-index:20;max-width:calc(100% - 32px)}
+footer{border-top:1px solid var(--line);padding-block:20px;font-size:13px;color:var(--muted)}
+footer .wrap{display:flex;gap:12px;flex-wrap:wrap;justify-content:space-between;align-items:center}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.seg label{flex-direction:row;align-items:center;gap:6px;padding:8px 12px;cursor:pointer;color:var(--ink);font-size:14px}
+.seg input{width:auto}
+.tplpick{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,180px),1fr));gap:10px}
+.tplpick label{flex-direction:row;align-items:center;gap:8px;border:1px solid var(--line);border-radius:8px;padding:10px 12px;color:var(--ink);cursor:pointer;font-size:14px}
+.tplpick label:has(input:checked){border-color:var(--accent);background:var(--accent-soft)}
+.tplpick input{width:auto}
+.lang{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.lang button{appearance:none;border:0;background:var(--surface);color:var(--muted);font:600 13px/1 var(--f-body);padding:8px 10px;cursor:pointer}
+.lang button+button{border-left:1px solid var(--line)}
+.lang button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink)}
+.lang button:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+@media (max-width:760px){.top nav{order:3;flex-basis:100%;gap:2px 0}.top .wrap{justify-content:space-between}}
+</style>
+
+<header class="top"><div class="wrap">
+  <a class="brand" href="#home"><span class="mark">ID</span><span id="brandName">АрендаID</span> <span class="pill stamp">TR</span></a>
+  <nav id="nav"></nav>
+  <div class="who" id="who"></div>
+</div></header>
+
+<main><div class="wrap" id="app"></div></main>
+
+<footer><div class="wrap">
+  <span id="footTxt"></span>
+  <button class="btn sm" id="resetBtn" type="button"></button>
+</div></footer>
+<div class="toast" id="toast" hidden></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script>
+/* ---------- storage ---------- */
+const KEY='arendaid-tr-v1', VIEW_MS=180000, PENDING_MS=15*60000;
+const mem={};
+const lsGet=k=>{try{return localStorage.getItem(k)}catch(e){return mem[k]??null}};
+const lsSet=(k,v)=>{try{localStorage.setItem(k,v)}catch(e){mem[k]=v}};
+const ssGet=k=>{try{return sessionStorage.getItem(k)}catch(e){return mem['s:'+k]??null}};
+const ssSet=(k,v)=>{try{sessionStorage.setItem(k,v)}catch(e){mem['s:'+k]=v}};
+function load(){try{const r=lsGet(KEY);return r?JSON.parse(r):null}catch(e){return null}}
+function save(){lsSet(KEY,JSON.stringify(S))}
+const emptyState=()=>({v:3,users:{},contracts:{},id2:{},requests:{},outbox:[],used:{},seq:100,demoContract:null});
+
+let S=load();
+let me=ssGet('arendaid-me');
+let myReqs=[];try{myReqs=JSON.parse(ssGet('arendaid-reqs')||'[]')}catch(e){myReqs=[]}
+const saveMyReqs=()=>ssSet('arendaid-reqs',JSON.stringify(myReqs));
+const setMe=id=>{me=id;ssSet('arendaid-me',id||'');renderWho()};
+
+/* ---------- язык интерфейса ---------- */
+let uiLang=lsGet('arendaid-tr-ui')==='tr'?'tr':'ru';
+const tx=(ru,tr)=>uiLang==='tr'?tr:ru;
+const pick2=p=>Array.isArray(p)?(uiLang==='tr'?p[1]:p[0]):String(p??'');
+
+/* ---------- helpers ---------- */
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const ALPH='ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
+function rnd(n){const a=new Uint32Array(n);crypto.getRandomValues(a);let s='';for(const x of a)s+=ALPH[x%32];return s}
+function uniq(gen){let x;do{x=gen()}while(S.used[x]);S.used[x]=1;return x}
+const iso=d=>{const z=new Date(d);z.setMinutes(z.getMinutes()-z.getTimezoneOffset());return z.toISOString().slice(0,10)};
+const addDays=n=>{const d=new Date();d.setDate(d.getDate()+n);return iso(d)};
+const fmtDate=s=>{if(!s)return'';const[y,m,d]=String(s).split('-');return `${d}.${m}.${y}`};
+const fmtDT=ts=>new Date(ts).toLocaleString(uiLang==='tr'?'tr-TR':'ru-RU',{day:'2-digit',month:'2-digit',year:'numeric',hour:'2-digit',minute:'2-digit'});
+const maskEmail=e=>{const[a,b]=String(e||'').split('@');return (a?a[0]:'')+'•••@'+(b||'')};
+const maskPhone=p=>'+•• ••• ••• •• '+String(p||'').replace(/\D/g,'').slice(-2);
+const fio=u=>[u.first,u.middle,u.last].filter(Boolean).join(' ');
+const normId=s=>String(s||'').trim().toUpperCase().replace(/\s+/g,'');
+const mmss=ms=>{const s=Math.max(0,Math.ceil(ms/1000));return Math.floor(s/60)+':'+String(s%60).padStart(2,'0')};
+function toast(t){const el=$('#toast');el.textContent=t;el.hidden=false;clearTimeout(toast.t);toast.t=setTimeout(()=>el.hidden=true,2600)}
+async function copyText(t){try{await navigator.clipboard.writeText(t);toast(tx('Скопировано','Kopyalandı'))}catch(e){toast(tx('Не удалось скопировать. Выделите текст вручную.','Kopyalanamadı. Metni elle seçin.'))}}
+const baseUrl=()=>location.href.split('#')[0];
+
+/* ---------- domain ---------- */
+function addUser(d){const id=uniq(()=>'ID-'+rnd(4)+'-'+rnd(4));const u={...d,id,createdAt:Date.now()};S.users[id]=u;return u}
+function createContract(type,terms,ids,createdBy,allConfirmed){
+  const cid=uniq(()=>'C'+rnd(8));const no=new Date().getFullYear()+'/'+String(++S.seq).padStart(5,'0');
+  const parties={};
+  for(const role of ['landlord','tenant']){
+    const id2=uniq(()=>'D2-'+rnd(5)+'-'+rnd(5));const ok=allConfirmed||ids[role]===createdBy;
+    parties[role]={userId:ids[role],id2,confirmed:ok,confirmedAt:ok?Date.now():null};
+    S.id2[id2]={userId:ids[role],contractId:cid,role};
+  }
+  S.contracts[cid]={id:cid,no,type,terms,parties,createdBy,createdAt:Date.now()};
+  const other=ids.landlord===createdBy?ids.tenant:ids.landlord;
+  if(!allConfirmed&&other!==createdBy)notify(other,['cabinet','email'],[`Вас указали стороной договора № ${no}. Подтвердите участие в личном кабинете.`,`${no} numaralı sözleşmede taraf olarak gösterildiniz. Katılımınızı hesabınızdan onaylayın.`]);
+  return S.contracts[cid];
+}
+function notify(userId,channels,text){const u=S.users[userId];if(!u)return;for(const ch of channels){S.outbox.unshift({to:userId,ch,addr:ch==='email'?maskEmail(u.email):ch==='sms'?maskPhone(u.phone):'',text,at:Date.now()})}S.outbox=S.outbox.slice(0,200)}
+const PURPOSES=[['Проверка стороны перед подписанием','İmza öncesi taraf kontrolü'],['Исполнение договора (оплата, акт, переписка)','Sözleşmenin ifası (ödeme, tutanak, yazışma)'],['Отметка об аренде в tapu (şerh)','Tapuya kira şerhi'],['Нотариальное действие (noter)','Noter işlemi'],['Запрос суда или государственного органа','Mahkeme veya kamu kurumu talebi'],['Другое','Diğer']];
+const STATUS={pending:[['Ожидает ответа','Yanıt bekleniyor'],'warn'],approved:[['Доступ открыт','Erişim açık'],'good'],denied:[['Отклонён','Reddedildi'],'bad'],revoked:[['Доступ отозван','Erişim geri alındı'],'bad'],expired:[['Время просмотра истекло','Görüntüleme süresi doldu'],''],timeout:[['Нет ответа 15 мин','15 dakika yanıt yok'],'']};
+const roleUI=role=>role==='landlord'?tx('Арендодатель','Kiraya Veren'):tx('Арендатор','Kiracı');
+const otherIdLabel=role=>role==='landlord'?tx('ID арендодателя',`Kiraya Verenin ID'si`):tx('ID арендатора',`Kiracının ID'si`);
+const purposeText=r=>pick2(PURPOSES[r.purpose]||PURPOSES[5]);
+
+function createRequest(id2,requesterId,label,purpose){
+  const link=S.id2[id2];if(!link)return null;
+  const c=S.contracts[link.contractId];
+  const r={id:uniq(()=>'R'+rnd(8)),id2,ownerId:link.userId,contractId:link.contractId,role:link.role,requesterId,requesterLabel:label,purpose,status:'pending',createdAt:Date.now()};
+  S.requests[r.id]=r;
+  const who=requesterId?`${label} (${requesterId})`:label;
+  notify(link.userId,['email','sms','cabinet'],[`Запрос на просмотр ваших данных по ID2 ${id2} (договор № ${c.no}). Кто: ${who}. Цель: ${PURPOSES[purpose][0]}. Разрешить или отклонить можно в личном кабинете.`,`ID2 ${id2} kodunuz (${c.no} numaralı sözleşme) için bilgi görüntüleme talebi. Talep eden: ${who}. Amaç: ${PURPOSES[purpose][1]}. Hesabınızdan onaylayabilir veya reddedebilirsiniz.`]);
+  myReqs.unshift(r.id);saveMyReqs();save();return r;
+}
+function decide(rid,ok){const r=S.requests[rid];if(!r||r.status!=='pending')return;
+  r.status=ok?'approved':'denied';r.decidedAt=Date.now();if(ok)r.expiresAt=Date.now()+VIEW_MS;
+  if(r.requesterId)notify(r.requesterId,['cabinet'],ok?[`Владелец ID2 ${r.id2} разрешил просмотр данных на 3 минуты.`,`ID2 ${r.id2} sahibi bilgilerin 3 dakika görüntülenmesine izin verdi.`]:[`Владелец ID2 ${r.id2} отклонил ваш запрос.`,`ID2 ${r.id2} sahibi talebinizi reddetti.`]);
+  save();}
+function revoke(rid){const r=S.requests[rid];if(r&&r.status==='approved'){r.status='revoked';r.decidedAt=Date.now();save()}}
+function sweep(){let ch=false;const n=Date.now();for(const r of Object.values(S.requests)){if(r.status==='approved'&&n>=r.expiresAt){r.status='expired';ch=true}else if(r.status==='pending'&&n-r.createdAt>PENDING_MS){r.status='timeout';ch=true}}if(ch)save();return ch}
+const app=()=>$('#app');
+
+/* ---------- fields & templates (Türk hukuku, TR + RU) ---------- */
+let docLang='tr';
+const opt=(tr,ru)=>({tr,ru});
+const F={
+  city:{l:'Место заключения (город)',ex:'Antalya',ph:'город',phTr:'şehir'},
+  startDate:{l:'Дата начала',t:'date',ph:'дата начала',phTr:'başlangıç tarihi'},
+  endDate:{l:'Дата окончания',t:'date',ph:'дата окончания',phTr:'bitiş tarihi'},
+  noticeDays:{l:'Уведомление о продлении и расторжении, дней',t:'number',ex:30,ph:'срок',phTr:'gün'},
+  rent:{l:'Плата в месяц, TL',t:'number',ex:35000,ph:'сумма',phTr:'tutar'},
+  payDay:{l:'Оплата до, число месяца',t:'number',ex:5,ph:'число',phTr:'gün'},
+  deposit:{l:'Депозит (güvence), TL',t:'number',ex:70000,ph:'сумма',phTr:'tutar'},
+  indexCap:{l:'Повышение в год, не более %',t:'number',ex:25,ph:'процент',phTr:'oran'},
+  address:{l:'Адрес объекта',ex:'Antalya, Muratpaşa, Fener Mah. 1950 Sok. No: 12 D: 5',w:1,ph:'адрес',phTr:'adres'},
+  tapu:{l:'Данные tapu: ада, парсель, № помещения',ex:'Ada 1234, Parsel 5, Bağımsız Bölüm 7',ph:'ада, парсель',phTr:'ada, parsel, bağımsız bölüm'},
+  area:{l:'Площадь, м²',t:'number',ex:95,ph:'площадь',phTr:'m²'},
+  rooms:{l:'Комнат (например, 2+1)',ex:'2+1',ph:'комнаты',phTr:'oda sayısı'},
+  residents:{l:'Проживающих вместе с арендатором, не более',t:'number',ex:1,ph:'число',phTr:'kişi sayısı'},
+  pets:{l:'Домашние животные',t:'select',o:[opt('beslenemez','не допускаются'),opt('Kiraya Verenin yazılı izniyle beslenebilir','допускаются с письменного согласия Арендодателя'),opt('beslenebilir','допускаются')]},
+  utilities:{l:'Коммунальные расходы и aidat',t:'select',w:1,o:[
+    opt('elektrik, su, doğalgaz ve internet giderleri ile olağan site veya apartman aidatı Kiracıya aittir','электричество, вода, газ, интернет и обычные взносы на содержание дома (aidat) оплачивает Арендатор'),
+    opt('kira bedeline dahildir','включены в арендную плату'),
+    opt('tüketim giderleri Kiracıya, site veya apartman aidatı Kiraya Verene aittir','расходы на потребление оплачивает Арендатор, aidat — Арендодатель')]},
+  purpose:{l:'Вид деятельности в помещении',ex:'danışmanlık bürosu',w:1,ph:'вид деятельности',phTr:'faaliyet konusu'},
+  utilitiesC:{l:'Коммунальные и эксплуатационные расходы',t:'select',w:1,o:[
+    opt('elektrik, su, doğalgaz ve olağan yönetim giderleri Kiracıya aittir','электричество, вода, газ и обычные расходы на управление зданием оплачивает Арендатор'),
+    opt('kira bedeline dahildir','включены в арендную плату')]},
+  vat:{l:'KDV (НДС)',t:'select',w:1,o:[
+    opt('Kiraya Veren gerçek kişi olduğundan kira bedeline KDV uygulanmaz','KDV не применяется, так как Арендодатель — физическое лицо'),
+    opt('kira bedeline KDV dahildir','KDV включён в арендную плату'),
+    opt('kira bedeline ayrıca KDV eklenir','KDV начисляется сверх арендной платы')]},
+  makeModel:{l:'Марка и модель',ex:'Renault Clio',ph:'марка и модель',phTr:'marka ve model'},
+  year:{l:'Год выпуска',t:'number',ex:2022,ph:'год',phTr:'model yılı'},
+  vin:{l:'Номер шасси (VIN)',ex:'VF1RJA00000000000',ph:'VIN',phTr:'şasi no'},
+  plate:{l:'Гос. номер (plaka)',ex:'07 ABC 123',ph:'номер',phTr:'plaka'},
+  ruhsat:{l:'Свидетельство о регистрации (ruhsat), серия и №',ex:'AA 123456',ph:'ruhsat',phTr:'ruhsat seri ve no'},
+  mileageLimit:{l:'Лимит пробега, км в месяц',t:'number',ex:3000,ph:'км',phTr:'km'},
+  territory:{l:'Территория эксплуатации',ex:'Türkiye Cumhuriyeti sınırları içinde',w:1,ph:'территория',phTr:'kullanım bölgesi'},
+  eqName:{l:'Наименование оборудования',ex:'30 kVA dizel jeneratör',w:1,ph:'наименование',phTr:'ekipmanın adı'},
+  serial:{l:'Серийный / инвентарный номер',ex:'GD30-2024-0187',ph:'номер',phTr:'seri no'},
+  qty:{l:'Количество, шт.',t:'number',ex:1,ph:'число',phTr:'adet'},
+  location:{l:'Место эксплуатации',ex:'Antalya, Kepez, Yeni Mah. 12. Sok. No: 4 şantiye alanı',w:1,ph:'адрес',phTr:'kullanım yeri'},
+  maintenance:{l:'Техническое обслуживание выполняет',t:'select',w:1,o:[opt('Kiraya Veren tarafından ve onun hesabına','Арендодатель за свой счёт'),opt('Kiracı tarafından ve onun hesabına','Арендатор за свой счёт'),opt('yetkili servis tarafından, bedeli Kiraya Verene ait olmak üzere','авторизованный сервис, оплачивает Арендодатель')]},
+};
+const ICON={
+ residential:'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg>',
+ commercial:'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M8 7h2M14 7h2M8 11h2M14 11h2M8 15h2M14 15h2"/></svg>',
+ vehicle:'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 13l2-5h14l2 5v5H3z"/><circle cx="7.5" cy="17.5" r="1.5"/><circle cx="16.5" cy="17.5" r="1.5"/></svg>',
+ equipment:'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1"/></svg>'
+};
+/* роли в интерфейсе (русский): 0 им., 1 род., 2 дат., 3 твор. */
+const RN={_:{landlord:['Арендодатель','Арендодателя','Арендодателю','Арендодателем'],tenant:['Арендатор','Арендатора','Арендатору','Арендатором']}};
+const roleN=(type,role,i)=>RN._[role][i||0];
+const ROLE_TR={landlord:'Kiraya Veren',tenant:'Kiracı'};
+const P=(tr,ru)=>[tr,ru];
+
+/* ---- общие блоки: недвижимость (TBK 339–356) и движимое имущество ---- */
+const termRealty=v=>[
+  P(`Kira süresi ${v('startDate')} tarihinden ${v('endDate')} tarihine kadardır.`,`Срок аренды — с ${v('startDate')} по ${v('endDate')}.`),
+  P('Kiracı, belirli süreli sözleşmenin bitiminden en az on beş gün önce yazılı bildirimde bulunmadıkça sözleşme aynı koşullarla bir yıl için uzamış sayılır (TBK m. 347/1).','Если Арендатор не уведомит Арендодателя письменно не позднее чем за 15 дней до окончания срока, договор считается продлённым на тех же условиях на один год (ст. 347/1 TBK).'),
+  P('Kiraya Veren, sözleşme süresinin bitimine dayanarak sözleşmeyi feshedemez. Ancak on yıllık uzama süresi sonunda, her uzama yılının bitiminden en az üç ay önce bildirimde bulunmak koşuluyla sözleşmeye son verebilir (TBK m. 347/1).','Арендодатель не может расторгнуть договор в связи с истечением его срока. По истечении десяти лет продлений он вправе прекратить договор, уведомив Арендатора не позднее чем за три месяца до окончания очередного года продления (ст. 347/1 TBK).')];
+const termMov=v=>[
+  P(`Kira süresi ${v('startDate')} tarihinden ${v('endDate')} tarihine kadardır.`,`Срок аренды — с ${v('startDate')} по ${v('endDate')}.`),
+  P(`Süre sonunda sözleşme tarafların yazılı mutabakatıyla uzatılabilir. Taraflar uzatma veya sona erdirme iradelerini sürenin bitiminden en az ${v('noticeDays')} gün önce birbirine bildirir.`,`По окончании срока договор может быть продлён по письменному соглашению сторон. О намерении продлить или прекратить договор стороны уведомляют друг друга не позднее чем за ${v('noticeDays')} дней до окончания срока.`)];
+const payRealty=(v,yan)=>[
+  P(`Aylık kira bedeli ${v('rent')} Türk lirasıdır. Kira bedeli, 32 sayılı Türk Parasının Kıymetini Koruma Hakkında Karar uyarınca Türk lirası olarak belirlenmiştir.`,`Ежемесячная арендная плата составляет ${v('rent')} турецких лир. В соответствии с Постановлением № 32 о защите стоимости турецкой валюты плата установлена в турецких лирах.`),
+  P(`Kira bedeli her ayın ${v('payDay')}. gününe kadar Kiraya Verenin Ek-2'de belirtilen banka hesabına veya PTT aracılığıyla ödenir. Ödeme açıklamasında sözleşme numarası belirtilir.`,`Плата вносится до ${v('payDay')}-го числа каждого месяца на банковский счёт Арендодателя, указанный в Приложении 2, или через PTT. В назначении платежа указывается номер договора.`),
+  yan,
+  P(`Yenilenen kira yıllarında kira bedeli bir önceki kira yılının bedeline göre en fazla %${v('indexCap')} oranında artırılır. Bu oran hiçbir durumda bir önceki kira yılında tüketici fiyat endeksindeki on iki aylık ortalamalara göre değişim oranını geçemez (TBK m. 344).`,`При продлении договора плата может быть увеличена не более чем на ${v('indexCap')}% к плате предыдущего года. В любом случае повышение не может превышать изменение среднегодового индекса потребительских цен (TÜFE) за предыдущий год (ст. 344 TBK).`),
+  P('Beş yıldan uzun süreli veya beş yıldan sonra yenilenen sözleşmelerde ve bundan sonraki her beş yıllık dönemde yeni kira yılının bedeli, TÜFE değişimi, kiralananın durumu ve emsal kira bedelleri dikkate alınarak hâkim tarafından hakkaniyete uygun biçimde belirlenir (TBK m. 344/3).','По истечении каждых пяти лет аренды плата на новый год определяется судом по справедливости с учётом изменения TÜFE, состояния помещения и рыночных ставок (ст. 344/3 TBK).'),
+  P('Kiracı kira bedelini ödemezse Kiraya Veren, en az otuz gün süre vererek yazılı olarak ödeme ister ve süre içinde ödenmezse sözleşmeyi feshedeceğini bildirir (TBK m. 315). Kiracıya kira bedeli ve yan giderler dışında başka bir ödeme yükümlülüğü getirilemez; bu sözleşmede ceza koşulu öngörülmemiştir. Gecikme halinde yalnızca yasal temerrüt faizi işler (TBK m. 346).','Если Арендатор не вносит плату, Арендодатель письменно требует оплаты, предоставив срок не менее 30 дней, и предупреждает, что при неоплате в этот срок расторгнет договор (ст. 315 TBK). Помимо арендной платы и сопутствующих расходов, на Арендатора нельзя возлагать иные платежи, поэтому неустойка договором не предусмотрена. При просрочке начисляются только законные проценты (ст. 346 TBK).')];
+const payMov=(v,yan)=>[
+  P(`Aylık kira bedeli ${v('rent')} Türk lirasıdır.`,`Ежемесячная арендная плата составляет ${v('rent')} турецких лир.`),
+  P(`Kira bedeli her ayın ${v('payDay')}. gününe kadar Kiraya Verenin Ek-2'de belirtilen banka hesabına ödenir.`,`Плата вносится до ${v('payDay')}-го числа каждого месяца на банковский счёт Арендодателя, указанный в Приложении 2.`),
+  yan,
+  P(`Kira bedeli yılda en fazla bir kez ve en fazla %${v('indexCap')} oranında, en az otuz gün önce yazılı bildirimle artırılabilir.`,`Плата может быть увеличена не чаще одного раза в год и не более чем на ${v('indexCap')}% с письменным уведомлением не менее чем за 30 дней.`),
+  P('Kiracı kira bedelini ödemezse Kiraya Veren, en az on gün süre vererek yazılı olarak ödeme ister; süre içinde ödenmezse sözleşmeyi feshedebilir (TBK m. 315). Geciken tutara yasal temerrüt faizi işler.','Если Арендатор не вносит плату, Арендодатель письменно требует оплаты, предоставив срок не менее 10 дней, и при неоплате вправе расторгнуть договор (ст. 315 TBK). На просроченную сумму начисляются законные проценты.')];
+const depRealty=v=>[
+  P(`Kiracı, güvence olarak ${v('deposit')} TL öder. Güvence bedeli üç aylık kira bedelini aşamaz (TBK m. 342).`,`Арендатор вносит депозит (güvence) в размере ${v('deposit')} TL. Депозит не может превышать арендную плату за три месяца (ст. 342 TBK).`),
+  P('Güvence bedeli, Kiraya Veren ile Kiracının ortak rızası olmadan çekilemeyecek şekilde bir bankada vadeli tasarruf hesabına yatırılır. Banka ancak iki tarafın rızası, kesinleşmiş icra takibi veya mahkeme kararıyla ödeme yapar.','Депозит размещается на срочном сберегательном счёте в банке, с которого его нельзя снять без согласия обеих сторон. Банк выдаёт деньги только с согласия обеих сторон, по окончательному исполнительному производству или решению суда.'),
+  P('Kiraya Veren, sözleşmenin sona ermesinden itibaren üç ay içinde Kiracıya karşı kira sözleşmesiyle ilgili dava açtığını veya icra takibine giriştiğini bankaya yazılı olarak bildirmezse banka, Kiracının istemi üzerine güvenceyi geri verir (TBK m. 342).','Если в течение трёх месяцев после окончания договора Арендодатель не сообщит банку письменно о подаче иска или начале исполнительного производства против Арендатора по этому договору, банк возвращает депозит по требованию Арендатора (ст. 342 TBK).')];
+const depMov=v=>[
+  P(`Kiracı, güvence olarak ${v('deposit')} TL öder.`,`Арендатор вносит депозит в размере ${v('deposit')} TL.`),
+  P('Güvence bedeli, kiralananın iadesinden itibaren yedi gün içinde geri ödenir. Kesinti yalnızca iade tutanağında belirtilen ve belgelerle (fotoğraf, fatura, servis raporu) ispatlanan hasar veya borç tutarında yapılabilir.','Депозит возвращается в течение 7 дней после возврата имущества. Удержание возможно только в размере ущерба или долга, указанного в акте возврата и подтверждённого документами: фотографиями, счетами, отчётом сервиса.')];
+const handBack=[
+  P('Kiracı, sözleşme sona erdiğinde kiralananı teslim aldığı durumda geri verir; olağan kullanım sonucu oluşan eskime ve bozulmalardan sorumlu değildir (TBK m. 334).','По окончании договора Арендатор возвращает имущество в том состоянии, в котором получил. За износ от обычного использования он не отвечает (ст. 334 TBK).'),
+  P('Teslim tutanağında belirtilmeyen ve olağan bir incelemeyle fark edilemeyecek ayıpların teslimden önce var olduğu kabul edilir; aksini Kiraya Veren ispatlar.','Недостатки, не отражённые в акте передачи и не выявляемые при обычном осмотре, считаются существовавшими до передачи, пока Арендодатель не докажет обратное.')];
+const tenantRealty=[
+  P('Kiralananı sözleşmeye uygun olarak özenle kullanır; kiralananın bulunduğu taşınmazda oturanlara ve komşulara gerekli saygıyı gösterir (TBK m. 316).','Пользоваться имуществом бережно и в соответствии с договором, уважать соседей и жильцов здания (ст. 316 TBK).'),
+  P('Kiralananın olağan kullanımı için gerekli temizlik ve bakım giderlerini öder (TBK m. 317).','Оплачивать уборку и мелкий уход, необходимые для обычного использования (ст. 317 TBK).'),
+  P('Kiraya Verenin yazılı rızası olmadıkça kiralananı başkasına kiraya veremez ve kullanım hakkını devredemez (TBK m. 322/2).','Не сдавать имущество в субаренду и не передавать право пользования без письменного согласия Арендодателя (ст. 322/2 TBK).'),
+  P('Kiraya Verenin yazılı rızası olmadan kiralananda yenilik ve değişiklik yapamaz (TBK m. 321).','Не производить переделок и улучшений без письменного согласия Арендодателя (ст. 321 TBK).'),
+  P('Kendisinin gidermekle yükümlü olmadığı ayıpları ve zararları gecikmeksizin, en geç 24 saat içinde Kiraya Verene bildirir.','Не позднее 24 часов сообщать Арендодателю о недостатках и повреждениях, которые обязан устранять Арендодатель.'),
+  P('Elektrik, su ve doğalgaz aboneliklerini sözleşme süresince kendi adına yaptırır; sözleşme sonunda abonelikleri borçsuz olarak kapatır.','На время договора оформить на себя договоры на электричество, воду и газ; по окончании договора закрыть их без задолженности.')];
+const inspect=P('Kiralananı ancak en az 24 saat önce bildirerek, uygun bir zamanda ve ayda en fazla bir kez gezebilir; acil durumlar bu kuralın dışındadır. Kiracının kullanımına başka bir şekilde müdahale etmez.','Осматривать имущество только с уведомлением не менее чем за 24 часа, в удобное время и не чаще раза в месяц, кроме аварийных ситуаций. Иным образом в пользование Арендатора не вмешиваться.');
+const newOwner=P('Kiralanan sözleşmenin kurulmasından sonra herhangi bir sebeple el değiştirirse yeni malik kira sözleşmesinin tarafı olur (TBK m. 310).','Если после заключения договора имущество перейдёт к другому собственнику, новый собственник становится стороной договора (ст. 310 TBK).');
+const endRealty=(konut)=>[
+  P('Kiracı kiralananı sözleşme süresine uymaksızın geri verirse, kiralananın benzer koşullarla kiraya verilebileceği makul süre boyunca kira bedelinden sorumludur; Kiraya Veren bu süre içinde yeni kiracı bulursa sorumluluk sona erer (TBK m. 325).','Если Арендатор вернёт имущество раньше срока, он отвечает за арендную плату в течение разумного срока, необходимого, чтобы сдать имущество на сходных условиях. Если Арендодатель найдёт нового арендатора раньше, обязанность прекращается (ст. 325 TBK).'),
+  P('Kiraya Veren sözleşmeyi ancak kanunda öngörülen sebeplerle sona erdirebilir: kendisi, eşi, altsoyu, üstsoyu veya bakmakla yükümlü olduğu kişiler için konut ya da işyeri gereksinimi, yeniden inşa veya imar (TBK m. 350); Kiracının yazılı tahliye taahhüdü veya bir kira yılı içinde iki haklı ihtar (TBK m. 352).','Арендодатель может прекратить договор только по основаниям, предусмотренным законом: потребность в жилье или помещении для себя, супруга, детей, родителей или иждивенцев, снос и новое строительство (ст. 350 TBK); письменное обязательство Арендатора освободить помещение или два обоснованных письменных предупреждения в течение одного года аренды (ст. 352 TBK).'),
+  ...(konut?[P('Kiracının veya birlikte yaşadığı eşinin aynı ilçe veya belde belediye sınırları içinde oturmaya elverişli bir konutu bulunur ve Kiraya Veren bunu sözleşmenin kurulması sırasında bilmiyorsa, Kiraya Veren sözleşmenin sona ermesinden itibaren bir ay içinde dava açarak sözleşmeyi sona erdirebilir (TBK m. 352/3).','Если у Арендатора или проживающего с ним супруга есть пригодное для жизни жильё в том же районе или муниципалитете и Арендодатель не знал об этом при заключении договора, Арендодатель вправе прекратить договор, подав иск в течение месяца после окончания его срока (ст. 352/3 TBK).'),P('Kiralanan aile konutu ise Kiracı, eşinin açık rızası olmadan sözleşmeyi feshedemez (TBK m. 349).','Если помещение является семейным жильём, Арендатор не может расторгнуть договор без явного согласия супруга (ст. 349 TBK).')]:[]),
+  P('Fesih bildirimleri yazılı olarak yapılır (TBK m. 348).','Уведомления о расторжении делаются в письменной форме (ст. 348 TBK).'),
+  P('Taraflar sözleşmeyi her zaman karşılıklı yazılı anlaşmayla sona erdirebilir.','Стороны могут в любое время прекратить договор по письменному соглашению.')];
+const endMov=v=>[
+  P('Taraflar sözleşmeyi her zaman karşılıklı yazılı anlaşmayla sona erdirebilir.','Стороны могут в любое время прекратить договор по письменному соглашению.'),
+  P(`Her taraf, en az ${v('noticeDays')} gün önce yazılı bildirimde bulunarak sözleşmeyi feshedebilir. İade tarihinden sonraki döneme ait kira bedeli alınmaz.`,`Каждая сторона вправе расторгнуть договор, письменно уведомив другую не менее чем за ${v('noticeDays')} дней. Плата за период после возврата имущества не взимается.`),
+  P('Kiracı özenle kullanma borcuna aykırı davranır ve yazılı ihtara rağmen aykırılık devam ederse Kiraya Veren sözleşmeyi feshedebilir (TBK m. 316).','Если Арендатор нарушает обязанность бережного пользования и продолжает нарушение после письменного предупреждения, Арендодатель вправе расторгнуть договор (ст. 316 TBK).'),
+  P('Kiralanan ayıpları nedeniyle kullanılamaz hale gelir ve Kiraya Veren uygun sürede ayıbı gidermezse Kiracı sözleşmeyi feshedebilir (TBK m. 306); peşin ödenen kira oransal olarak iade edilir.','Если имущество из-за недостатков стало непригодным, а Арендодатель не устранил их в разумный срок, Арендатор вправе расторгнуть договор (ст. 306 TBK). Плата, внесённая вперёд, возвращается пропорционально.')];
+const dispRealty=[
+  P('Kira ilişkisinden kaynaklanan uyuşmazlıklarda dava açılmadan önce arabulucuya başvurulması zorunludur (6325 sayılı Kanun m. 18/B). İlamsız icra yoluyla tahliye takipleri bu zorunluluğun dışındadır.','По спорам из арендных отношений до обращения в суд обязательна медиация (ст. 18/B закона № 6325). Исключение — выселение в порядке исполнительного производства без судебного решения (ilamsız icra).'),
+  P('Uyuşmazlıklar Hukuk Muhakemeleri Kanunu uyarınca görevli Sulh Hukuk Mahkemelerinde ve yetkili icra dairelerinde çözülür.','Споры рассматриваются мировыми судами по гражданским делам (Sulh Hukuk Mahkemesi) и исполнительными органами в соответствии с Гражданским процессуальным кодексом Турции (HMK).')];
+const dispMov=[
+  P('Taraflar dava açmadan önce uyuşmazlığı müzakere ve arabuluculuk yoluyla çözmeye çalışır. Kanunen zorunlu olduğu hallerde arabuluculuk dava şartıdır (6325 sayılı Kanun).','До обращения в суд стороны пытаются урегулировать спор переговорами и медиацией. Когда медиация обязательна по закону, без неё иск не принимается (закон № 6325).'),
+  P('Uyuşmazlıklar Hukuk Muhakemeleri Kanunu uyarınca görevli ve yetkili mahkemelerde çözülür.','Споры рассматриваются компетентными судами в соответствии с HMK.')];
+
+const TPL={
+ residential:{title:'Жилое помещение',sub:'Квартира, дом (konut)',doc:['KONUT KİRA SÖZLEŞMESİ','Договор аренды жилого помещения'],law:'TBK ст. 299–356, особые правила для жилья ст. 339–356',realty:1,
+  obj:['address','tapu','area','rooms','residents','pets','utilities'],term:['startDate','endDate'],payF:['rent','payDay','deposit','indexCap'],
+  pros:['Арендодатель не может выселить из-за окончания срока (ст. 347)','Повышение платы не выше индекса TÜFE (ст. 344)','Депозит до 3 месяцев на банковском счёте (ст. 342)'],
+  subject:v=>[P(`Kiraya Veren, ${v('address')} adresinde bulunan, tapuda ${v('tapu')} olarak kayıtlı, ${v('area')} m² brüt alanlı, ${v('rooms')} konutu (bundan sonra "Kiralanan") konut olarak kullanılmak üzere Kiracıya kiraya vermiştir.`,`Арендодатель сдаёт Арендатору для проживания жилое помещение по адресу: ${v('address')}, зарегистрированное в tapu как ${v('tapu')}, общей площадью ${v('area')} м², планировка ${v('rooms')} (далее — «Помещение»).`),
+    P('Kiraya Veren, Kiralananın maliki veya kiraya vermeye yetkili kişi olduğunu, Kiralanan üzerinde Kiracının kullanımını engelleyecek bir hak, haciz veya uyuşmazlık bulunmadığını beyan eder.','Арендодатель заявляет, что является собственником Помещения или вправе сдавать его, и что на Помещение нет прав третьих лиц, арестов или споров, препятствующих пользованию.'),
+    P('Kiralanandaki eşya ve demirbaşlar, fotoğraflı teslim tutanağında (Ek-1) gösterilir.','Мебель, техника и иное имущество в Помещении перечисляются в акте передачи с фотографиями (Приложение 1).')],
+  short:(v,l)=>l==='tr'?`Konut: ${v('address')}`:`Жилое помещение: ${v('address')}`,
+  pay:(v)=>payRealty(v,P(`Yan giderler: ${v('utilities')}. Olağanüstü giderler (çatı, asansör, kazan yenilemesi gibi) ile emlak vergisi Kiraya Verene aittir (TBK m. 302).`,`Сопутствующие расходы: ${v('utilities')}. Чрезвычайные расходы (замена кровли, лифта, котла и т. п.) и налог на недвижимость (emlak vergisi) несёт Арендодатель (ст. 302 TBK).`)),
+  hand:()=>P('Kiralanan, kararlaştırılan tarihte kullanıma elverişli durumda, demirbaş listesini ve fotoğrafları içeren teslim tutanağı (Ek-1) ile teslim edilir (TBK m. 301). Tutanakta sayaç değerleri ve teslim edilen anahtar sayısı da gösterilir.','Помещение передаётся в согласованную дату в пригодном для использования состоянии по акту передачи с перечнем имущества и фотографиями (Приложение 1, ст. 301 TBK). В акте указываются показания счётчиков и количество ключей.'),
+  lobl:()=>[P('Kiralananı kullanıma elverişli durumda teslim eder ve sözleşme süresince bu durumda bulundurur; olağan kullanım dışındaki ayıpları acil durumlarda derhal, diğer hallerde bildirimden itibaren en geç on gün içinde giderir (TBK m. 301).','Передать Помещение пригодным для использования и поддерживать его в таком состоянии весь срок. Недостатки, не связанные с обычным использованием, устранять немедленно при аварии, в остальных случаях — не позднее 10 дней с момента уведомления (ст. 301 TBK).'),
+    P('Kiralananla ilgili vergi ve benzeri yükümlülükleri öder (TBK m. 302).','Оплачивать налоги и аналогичные платежи, связанные с Помещением (ст. 302 TBK).'),
+    P('Kiralanan için Zorunlu Deprem Sigortası (DASK) poliçesini sözleşme süresince yürürlükte tutar.','Поддерживать действие полиса обязательного страхования от землетрясений (DASK) на весь срок договора.'),
+    inspect],
+  nobl:()=>tenantRealty,
+  specH:P('Konutun Kullanımı','Порядок пользования жильём'),
+  spec:v=>[P(`Kiralananda Kiracı ile birlikte en fazla ${v('residents')} kişi sürekli olarak oturabilir. Bu kişilerin kimlik bilgileri Ek-2'de gösterilir.`,`Вместе с Арендатором в Помещении могут постоянно проживать не более ${v('residents')} человек. Их данные указываются в Приложении 2.`),
+    P(`Evcil hayvan: ${v('pets')}.`,`Домашние животные: ${v('pets')}.`),
+    P('Kiracı, 634 sayılı Kat Mülkiyeti Kanunu ve yönetim planı hükümlerine uyar.','Арендатор соблюдает Закон о кондоминиуме № 634 и правила управления домом (yönetim planı).'),
+    P('Kiralanan turizm amaçlı kısa süreli kiralamaya konu edilemez (7464 sayılı Kanun).','Помещение нельзя сдавать посуточно или на короткие сроки в туристических целях (закон № 7464).'),
+    newOwner],
+  end:()=>endRealty(true),disp:()=>dispRealty},
+
+ commercial:{title:'Коммерческое помещение',sub:'Офис, магазин (çatılı işyeri)',doc:['ÇATILI İŞYERİ KİRA SÖZLEŞMESİ','Договор аренды коммерческого помещения'],law:'TBK ст. 299–356, особые правила ст. 339–356',realty:1,
+  obj:['address','tapu','area','purpose','utilitiesC'],term:['startDate','endDate'],payF:['rent','vat','payDay','deposit','indexCap'],
+  pros:['Арендатор вправе продлевать договор ежегодно (ст. 347)','Повышение платы не выше индекса TÜFE (ст. 344)','Новый собственник не прекращает аренду (ст. 310)'],
+  subject:v=>[P(`Kiraya Veren, ${v('address')} adresinde bulunan, tapuda ${v('tapu')} olarak kayıtlı, ${v('area')} m² alanlı çatılı işyerini (bundan sonra "Kiralanan") ${v('purpose')} faaliyetinde kullanılmak üzere Kiracıya kiraya vermiştir.`,`Арендодатель сдаёт Арендатору коммерческое помещение по адресу: ${v('address')}, зарегистрированное в tapu как ${v('tapu')}, площадью ${v('area')} м² (далее — «Помещение»), для деятельности: ${v('purpose')}.`),
+    P('Kiraya Veren, Kiralananın maliki veya kiraya vermeye yetkili kişi olduğunu, Kiralanan üzerinde Kiracının kullanımını engelleyecek bir hak, haciz veya uyuşmazlık bulunmadığını beyan eder.','Арендодатель заявляет, что является собственником Помещения или вправе сдавать его, и что на Помещение нет прав третьих лиц, арестов или споров, препятствующих пользованию.')],
+  short:(v,l)=>l==='tr'?`Çatılı işyeri: ${v('address')}`:`Коммерческое помещение: ${v('address')}`,
+  pay:(v)=>payRealty(v,P(`Yan giderler: ${v('utilitiesC')}. KDV: ${v('vat')}. Kira bedeli brüt tutardır; Kiracı vergi tevkifatı yapmakla yükümlü ise (GVK m. 94) tevkifatı yaparak kalan tutarı öder ve tevkif edilen vergiyi beyan eder.`,`Сопутствующие расходы: ${v('utilitiesC')}. KDV: ${v('vat')}. Плата указана до удержания налогов: если Арендатор обязан удерживать налог у источника (ст. 94 GVK), он удерживает его, платит остаток и декларирует удержанный налог.`)),
+  hand:()=>P('Kiralanan, kararlaştırılan tarihte sözleşmede öngörülen faaliyete elverişli durumda, fotoğrafları içeren teslim tutanağı (Ek-1) ile teslim edilir (TBK m. 301).','Помещение передаётся в согласованную дату в состоянии, пригодном для оговорённой деятельности, по акту передачи с фотографиями (Приложение 1, ст. 301 TBK).'),
+  lobl:()=>[P('Kiralananı sözleşmedeki faaliyete elverişli durumda teslim eder ve bu durumda bulundurur; olağan kullanım dışındaki ayıpları uygun sürede giderir (TBK m. 301).','Передать Помещение пригодным для оговорённой деятельности и поддерживать его в таком состоянии; недостатки, не связанные с обычным использованием, устранять в разумный срок (ст. 301 TBK).'),
+    P('Kiralananla ilgili vergi ve benzeri yükümlülükleri öder (TBK m. 302).','Оплачивать налоги и аналогичные платежи, связанные с Помещением (ст. 302 TBK).'),
+    P('Kiracının işyeri açma ve çalışma ruhsatı için gerekli tapu, iskân ve diğer belgeleri, talepten itibaren beş iş günü içinde sağlar.','В течение 5 рабочих дней по запросу предоставлять документы (tapu, iskân и др.), необходимые Арендатору для получения лицензии на работу (işyeri açma ve çalışma ruhsatı).'),
+    inspect],
+  nobl:()=>tenantRealty,
+  specH:P('İşyeri Faaliyeti','Ведение деятельности'),
+  spec:()=>[P('Kiracı, faaliyeti için gerekli ruhsat ve izinleri kendi adına alır.','Арендатор сам получает лицензии и разрешения, необходимые для его деятельности.'),
+    P('Tabela ve reklam unsurları, yönetim planına ve belediye düzenlemelerine uygun olarak, Kiraya Verenin onayıyla asılır. Onay haklı bir sebep olmadan esirgenemez.','Вывеска и реклама размещаются с согласия Арендодателя по правилам дома и муниципалитета. В согласии нельзя отказать без уважительной причины.'),
+    P('Tadilat, ancak Kiraya Verenin yazılı rızası ve gerekli resmi izinler alındıktan sonra yapılabilir.','Перепланировка допускается только с письменного согласия Арендодателя и после получения разрешений.'),
+    P('Kiraya Veren binayı yangın ve doğal afet risklerine karşı sigortalar; Kiracı kendi eşyasını ve sorumluluğunu sigortalayabilir.','Арендодатель страхует здание от пожара и стихийных бедствий; Арендатор вправе застраховать своё имущество и ответственность.'),
+    newOwner],
+  end:()=>endRealty(false),disp:()=>dispRealty},
+
+ vehicle:{title:'Автомобиль',sub:'Без водителя (sürücüsüz)',doc:['SÜRÜCÜSÜZ ARAÇ KİRA SÖZLEŞMESİ','Договор аренды автомобиля без водителя'],law:'TBK ст. 299–338 (общие правила аренды)',realty:0,
+  obj:['makeModel','year','vin','plate','ruhsat','mileageLimit','territory'],term:['startDate','endDate','noticeDays'],payF:['rent','payDay','deposit','indexCap'],
+  pros:['Крупный ремонт и износ — на арендодателе','Ответственность при ДТП ограничена франшизой каско','Порядок по штрафам за нарушения ПДД'],
+  subject:v=>[P(`Kiraya Veren, ${v('plate')} plakalı, ${v('year')} model ${v('makeModel')} marka aracı (şasi no ${v('vin')}, ruhsat ${v('ruhsat')}; bundan sonra "Araç") sürücüsüz olarak Kiracıya kiraya vermiştir.`,`Арендодатель сдаёт Арендатору без водителя автомобиль ${v('makeModel')}, ${v('year')} года выпуска, гос. номер ${v('plate')}, номер шасси ${v('vin')}, ruhsat ${v('ruhsat')} (далее — «Автомобиль»).`),
+    P('Kiraya Veren, Aracın maliki olduğunu, Araç üzerinde rehin, haciz veya yakalama kararı bulunmadığını beyan eder.','Арендодатель заявляет, что является собственником Автомобиля и что на нём нет залога, ареста или розыска.')],
+  short:(v,l)=>l==='tr'?`Araç: ${v('makeModel')}, ${v('plate')}`:`Автомобиль: ${v('makeModel')}, ${v('plate')}`,
+  pay:(v)=>payMov(v,P('Yakıt, otopark, köprü ve otoyol geçiş ücretleri Kiracıya aittir.','Топливо, парковку, проезд по мостам и платным дорогам оплачивает Арендатор.')),
+  hand:()=>P('Araç; kilometre, yakıt seviyesi, donanım ve mevcut hasarlar fotoğraflarla gösterilerek teslim tutanağı (Ek-1) ile, ruhsat ve zorunlu trafik sigortası poliçesiyle birlikte teslim edilir (TBK m. 301).','Автомобиль передаётся по акту (Приложение 1) с фиксацией пробега, уровня топлива, комплектации и имеющихся повреждений на фото, вместе с ruhsat и полисом обязательного страхования (ст. 301 TBK).'),
+  lobl:()=>[P('Aracı teknik olarak kullanıma elverişli durumda ve geçerli muayenesiyle teslim eder.','Передать Автомобиль технически исправным, с действующим техосмотром (muayene).'),
+    P('Sözleşme süresince Zorunlu Karayolları Motorlu Araçlar Mali Sorumluluk Sigortasını yürürlükte tutar (2918 sayılı Kanun m. 91).','Поддерживать полис обязательного страхования ответственности (trafik sigortası) на весь срок (ст. 91 закона № 2918).'),
+    P('Periyodik bakımı ve olağan aşınmadan kaynaklanan büyük onarımları üstlenir veya iki gün içinde eşdeğer bir araç sağlar.','Оплачивать плановое ТО и крупный ремонт из-за естественного износа либо в течение 2 дней предоставлять равноценную замену.')],
+  nobl:()=>[P('Aracı özenle ve trafik mevzuatına uygun olarak kullanır (TBK m. 316).','Пользоваться Автомобилем бережно и по правилам дорожного движения (ст. 316 TBK).'),
+    P('Aracı yalnızca kendisinin ve Ek-1\'de adı geçen, geçerli sürücü belgesine sahip kişilerin kullanmasına izin verir.','Допускать к управлению только себя и лиц с действующими правами, указанных в Приложении 1.'),
+    P('Aracı ücretli yolcu veya yük taşımacılığında kullanmaz; Kiraya Verenin yazılı rızası olmadan alt kiraya vermez (TBK m. 322).','Не использовать Автомобиль для платной перевозки пассажиров или грузов и не сдавать в субаренду без письменного согласия Арендодателя (ст. 322 TBK).'),
+    P('Olağan bakımı (yağ, su, lastik basıncı kontrolü) yapar (TBK m. 317).','Выполнять мелкий уход: проверять масло, жидкости и давление в шинах (ст. 317 TBK).'),
+    P('Kaza, hırsızlık veya hasarı en geç iki saat içinde Kiraya Verene bildirir.','Не позднее 2 часов сообщать Арендодателю о ДТП, угоне или повреждении.')],
+  specH:P('Aracın Kullanımı','Эксплуатация Автомобиля'),
+  spec:v=>[P(`Aylık kilometre sınırı ${v('mileageLimit')} km'dir. Sınırın aşılması halinde Ek-1'deki birim ücret uygulanır.`,`Лимит пробега — ${v('mileageLimit')} км в месяц. Перепробег оплачивается по ставке из Приложения 1.`),
+    P(`Kullanım bölgesi: ${v('territory')}. Yurt dışına çıkış yalnızca Kiraya Verenin yazılı izniyle mümkündür.`,`Территория эксплуатации: ${v('territory')}. Выезд за границу — только с письменного согласия Арендодателя.`),
+    P('Kira süresi içinde işlenen trafik kabahatlerine ilişkin idari para cezalarından Kiracı sorumludur. Kiraya Veren, kendisine tebliğ edilen cezayı beş gün içinde Kiracıya bildirir ve gerekirse bu sözleşmeyi ibraz ederek itiraz eder.','Штрафы за нарушения ПДД в период аренды оплачивает Арендатор. Арендодатель в течение 5 дней сообщает Арендатору о полученном постановлении и при необходимости обжалует его, представив договор.'),
+    P('Kazada tutanak düzenlenir veya kolluk çağrılır. Araç kasko sigortalı ise Kiracının sigortaca karşılanan zarardan sorumluluğu Ek-1\'de belirtilen muafiyet tutarıyla sınırlıdır.','При ДТП оформляется протокол (kaza tespit tutanağı) или вызывается полиция. Если Автомобиль застрахован по каско, ответственность Арендатора за ущерб, покрытый страховкой, ограничена франшизой из Приложения 1.'),
+    P('Üçüncü kişilere verilen zararlar bakımından 2918 sayılı Karayolları Trafik Kanunu hükümleri saklıdır; Kiracı kusuruyla sebep olduğu zararları Kiraya Verene öder.','Ответственность перед третьими лицами определяется Законом о дорожном движении № 2918. Ущерб, причинённый по вине Арендатора, он возмещает Арендодателю.')],
+  end:v=>endMov(v),disp:()=>dispMov},
+
+ equipment:{title:'Оборудование',sub:'Техника, движимое имущество',doc:['EKİPMAN KİRA SÖZLEŞMESİ','Договор аренды оборудования'],law:'TBK ст. 299–338 (общие правила аренды)',realty:0,
+  obj:['eqName','serial','qty','location','maintenance'],term:['startDate','endDate','noticeDays'],payF:['rent','payDay','deposit','indexCap'],
+  pros:['Риск случайной гибели — на собственнике','Снижение платы на время недостатка (ст. 307)','Замена неисправного за 3 рабочих дня'],
+  subject:v=>[P(`Kiraya Veren, ${v('serial')} seri numaralı ${v('qty')} adet ${v('eqName')} ekipmanını (bundan sonra "Ekipman") Kiracıya kiraya vermiştir.`,`Арендодатель сдаёт Арендатору оборудование: ${v('eqName')}, серийный номер ${v('serial')}, количество ${v('qty')} шт. (далее — «Оборудование»).`),
+    P('Kiraya Veren, Ekipmanın maliki veya kiraya vermeye yetkili kişi olduğunu ve Ekipman üzerinde üçüncü kişilerin hakkı bulunmadığını beyan eder.','Арендодатель заявляет, что является собственником Оборудования или вправе сдавать его и что на него нет прав третьих лиц.')],
+  short:(v,l)=>l==='tr'?`Ekipman: ${v('eqName')}`:`Оборудование: ${v('eqName')}`,
+  pay:(v)=>payMov(v,P('Sarf malzemeleri ve Ekipmanın çalışması için gerekli enerji giderleri Kiracıya aittir.','Расходные материалы и энергию для работы Оборудования оплачивает Арендатор.')),
+  hand:()=>P('Ekipman, aksesuarları, kullanım kılavuzu ve teslim tutanağı (Ek-1) ile çalışır durumda teslim edilir (TBK m. 301).','Оборудование передаётся исправным, с принадлежностями и инструкцией по эксплуатации, по акту (Приложение 1, ст. 301 TBK).'),
+  lobl:()=>[P('Ekipmanı çalışır durumda ve eksiksiz teslim eder.','Передать Оборудование исправным и в полной комплектации.'),
+    P('Kullanımı engelleyen ayıpları bedelsiz giderir veya üç iş günü içinde Ekipmanı eşdeğeriyle değiştirir. Ayıp süresince kira bedeli ayıpla orantılı olarak indirilir (TBK m. 307).','Безвозмездно устранять недостатки, препятствующие использованию, или в течение 3 рабочих дней заменять Оборудование равноценным. На время недостатка плата снижается соразмерно (ст. 307 TBK).')],
+  nobl:()=>[P('Ekipmanı kılavuza uygun olarak, ehil personel eliyle ve özenle kullanır (TBK m. 316).','Эксплуатировать Оборудование бережно, силами квалифицированного персонала и по инструкции (ст. 316 TBK).'),
+    P('Kiraya Verenin yazılı rızası olmadan Ekipmanı başkasına kiraya vermez (TBK m. 322).','Не сдавать Оборудование в субаренду без письменного согласия Арендодателя (ст. 322 TBK).'),
+    P('Arıza ve hasarları en geç 24 saat içinde Kiraya Verene bildirir.','Не позднее 24 часов сообщать Арендодателю о неисправностях и повреждениях.')],
+  specH:P('Kullanım ve Bakım','Эксплуатация и обслуживание'),
+  spec:v=>[P(`Kullanım yeri: ${v('location')}. Ekipman, Kiraya Verenin yazılı izni olmadan başka yere taşınamaz.`,`Место эксплуатации: ${v('location')}. Перемещать Оборудование в другое место можно только с письменного согласия Арендодателя.`),
+    P(`Periyodik bakım ${v('maintenance')} yapılır.`,`Плановое техническое обслуживание выполняет: ${v('maintenance')}.`),
+    P('Nakliye ve kurulum giderleri Ek-1\'de belirtilen tarafa aittir; aksi belirtilmedikçe söküm ve iade giderleri Kiracıya aittir.','Доставку и монтаж оплачивает сторона, указанная в Приложении 1; демонтаж и возврат, если не указано иное, — Арендатор.'),
+    P('Ekipmanın Kiracının kusuru olmaksızın yok olması veya hasar görmesi halinde zarar Kiraya Verene aittir.','Если Оборудование погибнет или повредится не по вине Арендатора, убытки несёт Арендодатель.')],
+  end:v=>endMov(v),disp:()=>dispMov}
+};
+
+/* срок, депозит и предупреждения */
+function termInfo(t){
+  if(!t||!t.startDate||!t.endDate)return{days:null,months:null,bad:false};
+  const s=new Date(t.startDate+'T00:00'),e=new Date(t.endDate+'T00:00');const days=Math.round((e-s)/864e5)+1;
+  return{days,months:Math.max(0,Math.round(days/30.44)),bad:e<=s};
+}
+function trNotes(type,t,forForm){
+  const out=[];const ti=termInfo(t);const realty=TPL[type].realty;
+  if(forForm&&ti.bad)out.push(['no','Дата окончания должна быть позже даты начала.']);
+  if(realty&&t.rent&&t.deposit&&+t.deposit>3*+t.rent)out.push(['no','Депозит не может превышать арендную плату за 3 месяца (ст. 342 TBK).']);
+  if(type==='residential'&&ti.days!==null&&!ti.bad&&ti.days<=100)out.push(['warn','Сдача жилья на срок до 100 дней в туристических целях требует разрешения Министерства культуры и туризма (закон № 7464). Без разрешения грозят крупные штрафы.']);
+  if(realty&&ti.days!==null&&!ti.bad&&ti.days<=183)out.push(['warn','Если помещение сдаётся для временного использования на срок до 6 месяцев, особые правила TBK о жилых и коммерческих помещениях (ст. 339–356) не применяются (ст. 339/2).']);
+  if(type==='commercial')out.push(['info','Договор аренды коммерческого помещения облагается гербовым сбором (damga vergisi) — 0,189% от суммы арендной платы за весь срок.']);
+  if(type==='vehicle')out.push(['info','С 1 января 2027 года компании, сдающие автомобили в аренду потребителям, обязаны иметь разрешение (yetki belgesi), а автомобили старше 6 лет или с пробегом более 180 000 км сдавать нельзя. По опубликованным данным, на частных лиц, сдающих свой автомобиль, это требование не распространяется.']);
+  return out;
+}
+
+function valueFn(terms,lang){
+  return k=>{const val=terms?terms[k]:undefined;const f=F[k]||{};
+    if(val===undefined||val===null||val==='')return `<span class="ph">[${esc(lang==='tr'?(f.phTr||f.lt||f.l):(f.ph||f.l))}]</span>`;
+    let out=val; if(f.o)out=(f.o[+val]||f.o[0])[lang]; else if(f.t==='date')out=fmtDate(val); else if(['rent','deposit'].includes(k))out=Number(val).toLocaleString('tr-TR');
+    return `<span class="fill">${esc(out)}</span>`;};
+}
+function id2Chip(c,role,lang){return c&&c.parties?`<span class="code">${esc(c.parties[role].id2)}</span>`:`<span class="ph">[${lang==='tr'?ROLE_TR[role]+' ID2':'ID2 '+roleN(c.type,role,1)}]</span>`}
+
+const pdClauses=type=>[
+  P('Taraflar bu sözleşmede, ArendaID sicili tarafından bu sözleşme için verilen ID2 kodlarıyla gösterilmiştir. Her kod, kayıt sırasında kimlik belgesine göre tespit edilen tarafla tek ve değişmez biçimde ilişkilidir.','Стороны указаны в договоре кодами ID2, присвоенными реестром ArendaID для этого договора. Каждый код однозначно связан со стороной, личность которой установлена при регистрации по документу, удостоверяющему личность.'),
+  P(`Tarafların ad, soyad, T.C. kimlik numarası veya yabancı kimlik numarası, kimlik belgesi, yerleşim yeri adresi ve banka hesap bilgileri${type==='residential'?' ile Kiracıyla birlikte oturan kişilerin kimlik bilgileri':''}, ArendaID sicilinde saklanan ve bu sözleşmenin ayrılmaz parçası olan Ek-2 "Tarafların Kimlik Bilgileri"nde yer alır. Sözleşme ve Ek-2 birlikte tek bir belge oluşturur.`,`ФИО, турецкий идентификационный номер (T.C. или иностранца), документ, адрес регистрации и банковские реквизиты сторон${type==='residential'?', а также данные лиц, проживающих с Арендатором,':''} содержатся в Приложении 2 «Данные сторон», которое хранится в реестре ArendaID и является неотъемлемой частью договора. Договор и Приложение 2 составляют единый документ.`),
+  P('Kişisel veriler 6698 sayılı Kişisel Verilerin Korunması Kanunu\'na uygun olarak işlenir; yurt dışına aktarım yalnızca Kanunun 9. maddesindeki şartlarla yapılabilir.','Персональные данные обрабатываются в соответствии с Законом Турции о защите персональных данных № 6698 (KVKK); передача за границу возможна только на условиях ст. 9 этого закона.'),
+  P('Bir tarafın kimlik bilgileri ID2 kodu üzerinden, yalnızca o tarafın talep üzerine vereceği onayla gösterilir. Onay, bilgileri üç dakika süreyle görüntüleme imkânı verir. Her talep ve sonucu erişim kaydına işlenir.','Реквизиты стороны раскрываются по коду ID2 только с её согласия, данного в ответ на запрос. Согласие открывает доступ на 3 минуты. Каждый запрос и его результат записываются в журнал доступа.'),
+  P('Taraflardan birinin onayı olmaksızın Ek-2 yalnızca yargı mercilerine, kanunla yetkili kılınmış kamu kurum ve kuruluşlarına, kira şerhi için tapu müdürlüğüne ve tarafların birlikte başvurusu üzerine notere verilir (KVKK m. 5/2 ve m. 28).','Без согласия стороны Приложение 2 предоставляется только судам, государственным органам, уполномоченным законом, управлению tapu для внесения отметки об аренде и нотариусу по совместному обращению сторон (ст. 5/2 и 28 KVKK).'),
+  P('Taraflar, sicil aracılığıyla öğrendikleri birbirlerine ait kişisel verileri yalnızca bu sözleşmenin kurulması ve ifası için kullanır ve üçüncü kişilere açıklamaz.','Стороны используют полученные через реестр данные друг друга только для заключения и исполнения договора и не раскрывают их третьим лицам.'),
+  P('Taraflar, sözleşmeyi imzalamadan önce sicil aracılığıyla birbirlerinin kimlik bilgilerini incelediklerini kabul eder.','Стороны подтверждают, что до подписания ознакомились с реквизитами друг друга через реестр.')];
+const finalClauses=type=>{const realty=TPL[type].realty;return[
+  P('Sözleşme taraflarca imzalandığı tarihte yürürlüğe girer.','Договор вступает в силу с момента подписания сторонами.'),
+  P('Sözleşmede yapılacak değişiklikler yazılı olarak yapılır ve taraflarca imzalanır.','Изменения в договор вносятся в письменной форме и подписываются сторонами.'),
+  P('Bildirimler ArendaID kişisel hesabı üzerinden yapılır ve Ek-2\'deki iletişim bilgilerine de gönderilir. Fesih ve ihtar gibi hukuki sonuç doğuran bildirimler ayrıca noter, KEP veya iadeli taahhütlü posta ile yapılır.','Уведомления направляются через личный кабинет ArendaID и дублируются на контакты из Приложения 2. Уведомления с юридическими последствиями, например о расторжении или предупреждения, дополнительно направляются через нотариуса, KEP (электронную заказную почту) или заказным письмом с уведомлением.'),
+  P('Sözleşme ıslak imza veya 5070 sayılı Elektronik İmza Kanunu uyarınca güvenli elektronik imza ile imzalanabilir.','Договор подписывается собственноручно или квалифицированной электронной подписью по Закону об электронной подписи № 5070.'),
+  ...(realty?[P('Taraflar sözleşmeyi isteğe bağlı olarak e-Devlet Kapısı\'ndaki kira sözleşmesi hizmeti üzerinden de onaylayabilir ve kira hakkını tapu siciline şerh ettirebilir (TBK m. 312).','Стороны вправе по желанию также подтвердить договор через сервис договоров аренды на портале e-Devlet и внести отметку об аренде в реестр tapu (ст. 312 TBK).')]:[]),
+  ...(type==='commercial'?[P('Sözleşmeden doğan damga vergisi taraflarca eşit olarak ödenir.','Гербовый сбор (damga vergisi) по договору стороны оплачивают поровну.')]:[]),
+  P('Sözleşme iki nüsha olarak düzenlenmiştir.','Договор составлен в двух экземплярах.'),
+  P('Sözleşmeye Türk hukuku uygulanır. Sözleşmenin Türkçe metni ile Rusça çevirisi arasında farklılık olması halinde Türkçe metin esas alınır.','К договору применяется право Турции. При расхождении турецкого текста и русского перевода преимущество имеет турецкий текст.'),
+  P('Ekler: Ek-1 Teslim tutanağı ve demirbaş listesi; Ek-2 Tarafların kimlik bilgileri.','Приложения: 1 — акт передачи и перечень имущества; 2 — данные сторон.')]};
+
+function contractHTML(c,lang){
+  lang=lang||docLang;const li=lang==='tr'?0:1;
+  const T=TPL[c.type],v=valueFn(c.terms,lang),ti=termInfo(c.terms);
+  const H=(tr,ru)=>li?ru:tr;
+  const secs=[
+   [H('Kiralanan','Предмет договора'),T.subject(v)],
+   [H('Kira Süresi','Срок'),T.realty?termRealty(v):termMov(v)],
+   [H('Kira Bedeli ve Ödeme','Арендная плата и расчёты'),T.pay(v)],
+   [H('Güvence Bedeli','Депозит'),T.realty?depRealty(v):depMov(v)],
+   [H('Teslim ve İade','Передача и возврат'),[T.hand(v),...handBack]],
+   [H('Kiraya Verenin Borçları','Обязанности Арендодателя'),T.lobl(v)],
+   [H('Kiracının Borçları','Обязанности Арендатора'),T.nobl(v)],
+   [T.specH[li],T.spec(v)],
+   [H('Sözleşmenin Sona Ermesi','Прекращение договора'),T.end(v)],
+   [H('Mücbir Sebep','Непреодолимая сила'),[P('Taraflardan birinin sorumlu tutulamayacağı sebeplerle (deprem, sel, yangın, salgın gibi) borcun ifası imkânsızlaşırsa ilgili taraf diğerini beş gün içinde bilgilendirir. İmkânsızlık 60 günden uzun sürerse her iki taraf da tazminatsız fesih hakkına sahiptir (TBK m. 136).','Если исполнение стало невозможным по причинам, за которые сторона не отвечает (землетрясение, наводнение, пожар, эпидемия), она уведомляет другую сторону в течение 5 дней. Если невозможность длится более 60 дней, каждая сторона вправе расторгнуть договор без компенсации (ст. 136 TBK).')]],
+   [H('Uyuşmazlıkların Çözümü','Разрешение споров'),T.disp(v)],
+   [H('Tarafların Tanımlanması ve Kişisel Veriler','Идентификация сторон и персональные данные'),pdClauses(c.type)],
+   [H('Son Hükümler','Заключительные положения'),finalClauses(c.type)]
+  ];
+  const pdNo=secs.length-1;
+  const body=secs.map((s,i)=>`<h4>${i+1}. ${esc(s[0])}</h4>`+s[1].map((p,j)=>`<p>${i+1}.${j+1}. ${p[li]}</p>`).join('')).join('');
+  const ess=`<div class="essentials"><table>
+    <tr><td>${H('Kiralanan','Объект')}</td><td>${T.short(v,lang)}</td></tr>
+    <tr><td>${H('Süre','Срок')}</td><td>${v('startDate')} – ${v('endDate')}${ti.months!==null?H(` (yaklaşık ${ti.months} ay)`,` (около ${ti.months} мес.)`):''}</td></tr>
+    <tr><td>${H('Aylık kira','Плата в месяц')}</td><td>${v('rent')} TL, ${H(`her ayın ${v('payDay')}. gününe kadar`,`до ${v('payDay')}-го числа`)}</td></tr>
+    <tr><td>${H('Güvence','Депозит')}</td><td>${v('deposit')} TL</td></tr>
+    <tr><td>${H('Artış sınırı','Лимит повышения')}</td><td>%${v('indexCap')}${T.realty?H(', TÜFE 12 aylık ortalamasını aşamaz',', не выше среднегодового TÜFE'):''}</td></tr></table></div>`;
+  const sig=['landlord','tenant'].map(role=>{
+    const p=c.parties?c.parties[role]:null;
+    const qr=p?`<div class="qr" data-qr="${esc(p.id2)}" title="${H('ID2 doğrulama','Проверка ID2')}" role="link" tabindex="0"></div>`:`<div class="qr fallback">QR</div>`;
+    const st=p?(p.confirmed?`<span class="small">${H('Katılım onaylandı','Участие подтверждено')} ${fmtDT(p.confirmedAt)}</span>`:`<span class="small"><span class="pill warn">${H('Onay bekleniyor','Ожидает подтверждения')}</span></span>`):'';
+    return `<div><b>${li?roleN(c.type,role):ROLE_TR[role]}</b><div class="qrrow">${qr}<div style="display:flex;flex-direction:column;gap:6px;min-width:0">ID2: ${id2Chip(c,role,lang)}<span class="small">${H('Ad soyad Ek-2\'dedir. Kimlik bilgileri QR kod ile, sahibinin onayıyla görüntülenir.','ФИО — в Приложении 2. Реквизиты по QR-коду — с согласия владельца.')}</span></div></div><div>${H('İmza','Подпись')}:</div><div class="sigline"></div>${st}</div>`;
+  }).join('');
+  const city=c.terms&&c.terms.city;
+  return `<article class="paper" id="paper" lang="${lang}">
+    <h2 class="doc-t">${esc(T.doc[li])}</h2>
+    <div class="doc-sub">${H('No','№')} ${c.no?esc(c.no):`<span class="ph">[${H('numara','номер')}]</span>`}</div>
+    <div class="meta"><span>${city?esc(city):`<span class="ph">[${H('şehir','город')}]</span>`}</span><span>${c.createdAt?fmtDate(iso(c.createdAt)):`<span class="ph">[${H('tarih','дата')}]</span>`}</span></div>
+    <p>${H(`Bir tarafta, kimlik bilgileri bu sözleşmenin Ek-2'sinde ve ArendaID sicilinde ID2 ${id2Chip(c,'landlord',lang)} koduyla kayıtlı olan taraf ("Kiraya Veren") ile diğer tarafta, kimlik bilgileri Ek-2'de ve ArendaID sicilinde ID2 ${id2Chip(c,'tenant',lang)} koduyla kayıtlı olan taraf ("Kiracı") arasında aşağıdaki şartlarla kira sözleşmesi kurulmuştur.`,
+      `Сторона, данные которой содержатся в Приложении 2 и в реестре ArendaID под кодом ID2 ${id2Chip(c,'landlord',lang)} («Арендодатель»), и сторона, данные которой содержатся в Приложении 2 и в реестре ArendaID под кодом ID2 ${id2Chip(c,'tenant',lang)} («Арендатор»), заключили договор аренды на следующих условиях.`)}</p>
+    <p><b>${H('Temel koşullar','Существенные условия')}</b></p>${ess}
+    ${body}
+    <h4>${H('İmzalar','Подписи сторон')}</h4><div class="sig">${sig}</div>
+    <h4>${H('Ek-2. Tarafların Kimlik Bilgileri','Приложение 2. Данные сторон')}</h4>
+    <p>${H(`Sözleşmenin açık nüshasında yer almaz. ArendaID sicilinde saklanır ve sözleşmenin ${pdNo}. maddesindeki kurallara göre verilir.`,`Не воспроизводится в открытом экземпляре договора. Хранится в реестре ArendaID и предоставляется по правилам раздела ${pdNo} договора.`)}</p>
+    <p class="small" style="margin-top:22px;font-style:italic">${H('Bu örnek Türk Borçlar Kanunu esas alınarak hazırlanmıştır. İmzalamadan önce bir avukata danışmanız önerilir.','Образец подготовлен на основе Турецкого кодекса обязательств (TBK). Русский текст — перевод; юридическую силу имеет турецкий. Перед подписанием рекомендуем консультацию турецкого юриста.')}</p>
+  </article>`;
+}
+function langToggle(){return `<span class="seg" role="group" aria-label="Язык договора"><label><input type="radio" name="dl" value="tr"${docLang==='tr'?' checked':''}>Türkçe (оригинал)</label><label><input type="radio" name="dl" value="ru"${docLang==='ru'?' checked':''}>Русский перевод</label></span>`}
+function bindLangToggle(rerender){app().querySelectorAll('input[name=dl]').forEach(r=>r.onchange=()=>{docLang=r.value;try{localStorage.setItem('arendaid-tr-lang',docLang)}catch(e){}rerender()})}
+try{const l=localStorage.getItem('arendaid-tr-lang');if(l==='ru'||l==='tr')docLang=l}catch(e){}
+
+/* ---------- турецкие подписи для полей и образцов ---------- */
+const FL_TR={city:'Sözleşme yeri (şehir)',startDate:'Başlangıç tarihi',endDate:'Bitiş tarihi',noticeDays:'Uzatma ve fesih bildirimi, gün',rent:'Aylık kira, TL',payDay:'Ödeme günü (ayın kaçı)',deposit:'Güvence bedeli, TL',indexCap:'Yıllık artış, en fazla %',address:'Kiralananın adresi',tapu:'Tapu bilgileri: ada, parsel, bağımsız bölüm',area:'Alan, m²',rooms:'Oda sayısı (örneğin 2+1)',residents:'Kiracıyla birlikte oturacak kişi, en fazla',pets:'Evcil hayvan',utilities:'Yan giderler ve aidat',purpose:'Faaliyet konusu',utilitiesC:'Yan giderler ve yönetim giderleri',vat:'KDV',makeModel:'Marka ve model',year:'Model yılı',vin:'Şasi numarası (VIN)',plate:'Plaka',ruhsat:'Ruhsat seri ve no',mileageLimit:'Aylık kilometre sınırı',territory:'Kullanım bölgesi',eqName:'Ekipmanın adı',serial:'Seri / demirbaş numarası',qty:'Adet',location:'Kullanım yeri',maintenance:'Periyodik bakımı yapan'};
+for(const k in FL_TR)F[k].lt=FL_TR[k];
+const TPL_TR={
+ residential:{t:'Konut',s:'Daire, müstakil ev',law:'TBK m. 299–356, konut ve çatılı işyeri kiraları m. 339–356',p:['Kiraya veren süre bitimine dayanarak tahliye edemez (m. 347)','Kira artışı TÜFE ortalamasını aşamaz (m. 344)','Güvence en fazla 3 aylık kira, banka hesabında (m. 342)']},
+ commercial:{t:'Çatılı işyeri',s:'Ofis, mağaza',law:'TBK m. 299–356, konut ve çatılı işyeri kiraları m. 339–356',p:['Kiracı sözleşmeyi her yıl uzatabilir (m. 347)','Kira artışı TÜFE ortalamasını aşamaz (m. 344)','Yeni malik kira sözleşmesinin tarafı olur (m. 310)']},
+ vehicle:{t:'Araç',s:'Sürücüsüz',law:'TBK m. 299–338 (genel hükümler)',p:['Büyük onarım ve olağan aşınma Kiraya Verene ait','Kazada sorumluluk kasko muafiyetiyle sınırlı','Trafik cezaları için açık prosedür']},
+ equipment:{t:'Ekipman',s:'Makine, taşınır mal',law:'TBK m. 299–338 (genel hükümler)',p:['Kusursuz hasar riski malike ait','Ayıp süresince kira indirilir (m. 307)','Arızalı ekipman 3 iş günü içinde değiştirilir']}};
+const tTitle=k=>tx(TPL[k].title,TPL_TR[k].t),tSub=k=>tx(TPL[k].sub,TPL_TR[k].s),tLaw=k=>tx(TPL[k].law,TPL_TR[k].law),tPros=k=>uiLang==='tr'?TPL_TR[k].p:TPL[k].pros,tDoc=k=>TPL[k].doc[uiLang==='tr'?0:1];
+const fLabel=k=>uiLang==='tr'?F[k].lt:F[k].l;
+
+/* предупреждения: [уровень, ru, tr] */
+function notesFor(type,t,forForm){
+  const out=[];const ti=termInfo(t);const realty=TPL[type].realty;
+  if(forForm&&ti.bad)out.push(['no','Дата окончания должна быть позже даты начала.','Bitiş tarihi başlangıç tarihinden sonra olmalıdır.']);
+  if(realty&&t.rent&&t.deposit&&+t.deposit>3*+t.rent)out.push(['no','Депозит не может превышать арендную плату за 3 месяца (ст. 342 TBK).','Güvence bedeli üç aylık kira bedelini aşamaz (TBK m. 342).']);
+  if(type==='residential'&&ti.days!==null&&!ti.bad&&ti.days<=100)out.push(['warn','Сдача жилья на срок до 100 дней в туристических целях требует разрешения Министерства культуры и туризма (закон № 7464). Без разрешения грозят крупные штрафы.','100 güne kadar turizm amaçlı konut kiralaması Kültür ve Turizm Bakanlığı izni gerektirir (7464 sayılı Kanun). İzinsiz kiralamada yüksek idari para cezaları uygulanır.']);
+  if(realty&&ti.days!==null&&!ti.bad&&ti.days<=183)out.push(['warn','Если помещение сдаётся для временного использования на срок до 6 месяцев, особые правила TBK о жилых и коммерческих помещениях (ст. 339–356) не применяются (ст. 339/2).','Nitelikleri gereği geçici kullanım için en çok altı ay süreyle kiralanan konut ve çatılı işyerlerine TBK m. 339–356 hükümleri uygulanmaz (m. 339/2).']);
+  if(type==='commercial')out.push(['info','Договор аренды коммерческого помещения облагается гербовым сбором (damga vergisi) — 0,189% от суммы арендной платы за весь срок.','Çatılı işyeri kira sözleşmesi, sözleşme süresince ödenecek toplam kira üzerinden binde 1,89 damga vergisine tabidir.']);
+  if(type==='vehicle')out.push(['info','С 1 января 2027 года компании, сдающие автомобили в аренду потребителям, обязаны иметь разрешение (yetki belgesi), а автомобили старше 6 лет или с пробегом более 180 000 км сдавать нельзя. По опубликованным данным, на частных лиц, сдающих свой автомобиль, это требование не распространяется.',`1 Ocak 2027'den itibaren tüketicilere araç kiralayan işletmelerin yetki belgesi alması zorunludur; 6 yaşından büyük veya 180.000 km'yi aşmış araçlar kiralanamaz. Yayımlanan bilgilere göre bu şartlar kendi aracını kiraya veren gerçek kişilere uygulanmaz.`]);
+  return out;
+}
+const noteText=n=>uiLang==='tr'?n[2]:n[1];
+
+function langToggle2(){return `<span class="seg" role="group" aria-label="${tx('Язык договора','Sözleşme dili')}"><label><input type="radio" name="dl" value="tr"${docLang==='tr'?' checked':''}>${tx('Türkçe (оригинал)','Türkçe (asıl metin)')}</label><label><input type="radio" name="dl" value="ru"${docLang==='ru'?' checked':''}>${tx('Русский перевод','Rusça çeviri')}</label></span>`}
+
+function renderQRs(root){
+  (root||document).querySelectorAll('[data-qr]').forEach(el=>{
+    const id2=el.dataset.qr;const url=baseUrl()+'#check-'+id2;el.innerHTML='';
+    if(typeof QRCode!=='undefined'){try{new QRCode(el,{text:url,width:176,height:176,colorDark:'#000000',colorLight:'#ffffff',correctLevel:QRCode.CorrectLevel.M})}catch(e){el.classList.add('fallback');el.textContent=id2}}
+    else{el.classList.add('fallback');el.textContent=tx('QR недоступен','QR yok')}
+    const go=()=>{location.hash='check-'+id2};el.onclick=go;el.onkeydown=e=>{if(e.key==='Enter')go()};
+  });
+}
+
+/* ---------- шапка, подвал, язык ---------- */
+let view='home',viewArg=null,pendingType='residential';
+const NAV=[['home','Главная','Ana sayfa'],['templates','Образцы договоров','Sözleşme örnekleri'],['new','Новый договор','Yeni sözleşme'],['check','Проверить ID2','ID2 doğrula'],['cabinet','Личный кабинет','Hesabım'],['register','Регистрация','Kayıt ol']];
+function renderChrome(){
+  document.documentElement.lang=uiLang;document.title=tx('АрендаID Türkiye','ArendaID Türkiye');
+  $('#brandName').textContent=tx('АрендаID','ArendaID');
+  $('#nav').innerHTML=NAV.map(([r,ru,tr])=>`<a href="#${r}" data-r="${r}" class="${r===view?'on':''}">${uiLang==='tr'?tr:ru}</a>`).join('');
+  $('#footTxt').textContent=tx('Прототип по праву Турции. Данные хранятся только в этом браузере. Вводите только тестовые данные.','Türk hukukuna göre hazırlanmış prototip. Veriler yalnızca bu tarayıcıda saklanır. Yalnızca test verileri girin.');
+  $('#resetBtn').textContent=tx('Сбросить демо-данные','Demo verilerini sıfırla');
+  renderWho();
+}
+function renderWho(){
+  const u=me&&S.users[me];
+  const sw=`<span class="lang" role="group" aria-label="Язык / Dil"><button type="button" data-ui="ru" aria-pressed="${uiLang==='ru'}">Русский</button><button type="button" data-ui="tr" aria-pressed="${uiLang==='tr'}">Türkçe</button></span>`;
+  $('#who').innerHTML=sw+(u?`<span class="code">${esc(u.id)}</span><button class="btn sm" id="logout" type="button">${tx('Выйти','Çıkış')}</button>`:`<a class="btn sm" href="#cabinet">${tx('Войти','Giriş yap')}</a>`);
+  const lo=$('#logout');if(lo)lo.onclick=()=>{setMe(null);route()};
+  $('#who').querySelectorAll('[data-ui]').forEach(b=>b.onclick=()=>{if(uiLang===b.dataset.ui)return;uiLang=b.dataset.ui;lsSet('arendaid-tr-ui',uiLang);docLang=uiLang;try{localStorage.setItem('arendaid-tr-lang',docLang)}catch(e){}route(true)});
+}
+
+/* ---------- главная ---------- */
+function viewHome(){
+  const dc=S.contracts[S.demoContract];const ids=Object.values(S.users).filter(u=>u.demo);
+  const L=uiLang==='tr';
+  app().innerHTML=`<div class="stack" style="gap:32px">
+  <section class="hero">
+    <div><div class="eyebrow">${tx('Реестр сторон договоров аренды · право Турции','Kira sözleşmesi tarafları sicili · Türk hukuku')}</div>
+      <h1 style="margin-top:10px">${tx('Договор аренды без паспортных данных в тексте','Metninde kimlik bilgisi bulunmayan kira sözleşmesi')}</h1>
+      <p class="lead">${tx('Стороны регистрируются один раз и получают личный ID. В каждый договор вместо имени и номера kimlik попадает новый код ID2 с QR-кодом, а реквизиты уходят в Приложение 2 (Ek-2). Оно открывается только с согласия владельца и только на 3 минуты, либо по запросу суда, уполномоченного органа или управления tapu. Договор составляется на турецком с русским переводом.','Taraflar bir kez kayıt olur ve kişisel bir ID alır. Her sözleşmeye ad ve kimlik numarası yerine yeni bir ID2 kodu ve QR kod yazılır; kimlik bilgileri Ek-2\'de tutulur. Ek-2 yalnızca sahibinin onayıyla ve yalnızca 3 dakika süreyle ya da mahkeme, yetkili kurum veya tapu müdürlüğünün talebiyle açılır. Sözleşme Türkçe hazırlanır, Rusça çevirisi de bulunur.')}</p>
+      <div class="row" style="margin-top:20px"><a class="btn pri" href="#templates">${tx('Выбрать образец договора','Sözleşme örneği seç')}</a><a class="btn" href="#check">${tx('Проверить ID2','ID2 doğrula')}</a><a class="btn" href="#register">${tx('Зарегистрироваться','Kayıt ol')}</a></div>
+    </div>
+    <div class="mini-doc" aria-hidden="true">
+      <div class="ttl">KONUT KİRA SÖZLEŞMESİ</div>
+      <div><span class="strike">Ayşe Yılmaz, T.C. Kimlik No 1045…</span></div>
+      <div>…ArendaID sicilinde ID2 <span class="code">${dc?esc(dc.parties.landlord.id2):'D2-7KQ3M-X9P2A'}</span> koduyla kayıtlı olan taraf ("Kiraya Veren")…</div>
+      <div class="qrrow">${dc?`<div class="qr" data-qr="${esc(dc.parties.landlord.id2)}" tabindex="0" role="link"></div>`:''}<span class="small" style="font-family:var(--f-body)">${tx('Нажмите на QR, чтобы запросить реквизиты','Kimlik bilgilerini talep etmek için QR koda tıklayın')}</span></div>
+    </div>
+  </section>
+  <section class="stack"><h2>${tx('Как это работает','Nasıl çalışır')}</h2>
+    <ol class="steps" data-step="${tx('Шаг','Adım')}">
+      <li data-step="${tx('Шаг','Adım')}"><h3>${tx('Регистрация','Kayıt')}</h3><p class="small muted">${tx('Человек один раз вводит имя, T.C. Kimlik No или Yabancı Kimlik No, документ, адрес и контакты и даёт açık rıza по KVKK. Система выдаёт постоянный ID, например','Kişi bir kez adını, T.C. Kimlik No veya Yabancı Kimlik No\'sunu, kimlik belgesini, adresini ve iletişim bilgilerini girer ve KVKK kapsamında açık rıza verir. Sistem kalıcı bir ID verir, örneğin')} <span class="code">ID-7KQ3-M9PX</span>.</p></li>
+      <li data-step="${tx('Шаг','Adım')}"><h3>${tx('Договор по ID','ID ile sözleşme')}</h3><p class="small muted">${tx('Стороны выбирают образец по TBK и указывают только ID. В договор записывается новый код ID2 для каждой стороны и QR-код рядом с ним.','Taraflar TBK\'ya uygun bir örnek seçer ve yalnızca ID\'lerini girer. Sözleşmeye her taraf için yeni bir ID2 kodu ve yanında QR kod yazılır.')}</p></li>
+      <li data-step="${tx('Шаг','Adım')}"><h3>${tx('Запрос реквизитов','Bilgi talebi')}</h3><p class="small muted">${tx('По QR-коду или поиску ID2 можно запросить данные. Владелец получает уведомление на почту, по SMS и в личный кабинет.','QR kod veya ID2 araması ile bilgi talep edilebilir. Bilgilerin sahibine e-posta, SMS ve hesap bildirimi gider.')}</p></li>
+      <li data-step="${tx('Шаг','Adım')}"><h3>${tx('Согласие на 3 минуты','3 dakikalık onay')}</h3><p class="small muted">${tx('Если владелец разрешает, данные показываются 3 минуты и скрываются. Каждый запрос попадает в журнал доступа.','Sahibi izin verirse bilgiler 3 dakika gösterilir ve sonra gizlenir. Her talep erişim kaydına işlenir.')}</p></li>
+    </ol>
+  </section>
+  <section class="grid2">
+    <div class="card"><h3>${tx('Что учтено из законодательства Турции','Türk mevzuatından dikkate alınanlar')}</h3>
+      <ul class="clean small">${(L?[
+        '<b>Konut ve çatılı işyeri kiracısının korunması</b> (TBK m. 339–356): kiracı 15 gün önce bildirmezse sözleşme her yıl uzar; kiraya veren süre bitimine dayanarak tahliye edemez, ancak m. 350–352\'deki sebeplerle veya 10 yıllık uzama süresinden sonra sona erdirebilir.',
+        '<b>Kira artışı</b> TÜFE on iki aylık ortalamasını aşamaz (m. 344). Kiracıya gecikme cezası yüklenemez (m. 346).',
+        '<b>Güvence bedeli</b> en fazla üç aylık kira; yalnızca iki tarafın onayıyla çekilebilen banka hesabında tutulur (m. 342).',
+        '<b>Kira Türk lirası</b> olarak belirlenir (32 sayılı Karar); ödeme banka veya PTT aracılığıyla yapılır.',
+        '<b>Zorunlu arabuluculuk</b>: kira uyuşmazlıklarında dava öncesi arabuluculuk (6325 sayılı Kanun m. 18/B); davalar Sulh Hukuk Mahkemesinde görülür.',
+        '<b>Uyarılar</b>: 100 güne kadar turizm amaçlı konut kiralaması için izin (7464 sayılı Kanun), çatılı işyerleri için damga vergisi, 2027\'den itibaren araç kiralama kuralları.',
+        '<b>6698 sayılı KVKK</b>: kayıtta açık rıza, kimlik bilgileri Ek-2\'de, onaysız açıklama yalnızca mahkemeye, kamu kurumlarına ve tapuya.']:[
+        '<b>Защита арендатора жилья и коммерческих помещений</b> (TBK ст. 339–356): договор ежегодно продлевается, если арендатор не откажется за 15 дней; арендодатель не может выселить из-за окончания срока, только по основаниям ст. 350–352 или после 10 лет продлений.',
+        '<b>Повышение платы</b> не выше среднегодового индекса TÜFE (ст. 344). Неустойку за просрочку на арендатора возлагать нельзя (ст. 346).',
+        '<b>Депозит</b> не больше трёх месячных плат, на банковском счёте с доступом только по согласию обеих сторон (ст. 342).',
+        '<b>Плата в турецких лирах</b> (Постановление № 32), оплата через банк или PTT.',
+        '<b>Обязательная медиация</b> до суда по арендным спорам (закон № 6325, ст. 18/B), споры рассматривает Sulh Hukuk Mahkemesi.',
+        '<b>Предупреждения:</b> разрешение на туристическую аренду жилья до 100 дней (закон № 7464), гербовый сбор для коммерческих помещений, новые правила аренды автомобилей с 2027 года.',
+        '<b>Персональные данные по KVKK № 6698:</b> явное согласие при регистрации, реквизиты в Ek-2, раскрытие без согласия только суду, госорганам и tapu.']).map(x=>`<li>${x}</li>`).join('')}
+      </ul>
+    </div>
+    <div class="card soft"><h3>${tx('Попробуйте на примере','Örnekle deneyin')}</h3>
+      <p class="small muted">${tx('В прототипе есть два тестовых пользователя (гражданка Турции и иностранец с ikamet izni) и договор аренды жилья между ними. Для входа введите ID и последние 4 цифры телефона.','Prototipte iki test kullanıcısı (bir T.C. vatandaşı ve ikamet izni olan bir yabancı) ve aralarında bir konut kira sözleşmesi bulunur. Giriş için ID\'yi ve telefonun son 4 hanesini girin.')}</p>
+      <div class="tbl-wrap"><table class="list"><tr><th>ID</th><th>${tx('Код входа','Giriş kodu')}</th><th>${tx('Роль в примере','Örnekteki rolü')}</th></tr>
+      ${ids.map(u=>`<tr><td><span class="code">${esc(u.id)}</span></td><td style="font-family:var(--f-mono)">${esc(String(u.phone).replace(/\D/g,'').slice(-4))}</td><td>${roleUI(u.id===dc?.parties.landlord.userId?'landlord':'tenant')}</td></tr>`).join('')}</table></div>
+      <p class="small">${tx(`Сценарий: откройте <a href="${dc?'#doc-'+dc.id:'#templates'}">пример договора</a>, переключите язык, нажмите на QR-код арендатора, отправьте запрос, затем войдите как арендатор и разрешите просмотр.`,`Senaryo: <a href="${dc?'#doc-'+dc.id:'#templates'}">örnek sözleşmeyi</a> açın, dili değiştirin, Kiracının QR koduna tıklayın, talep gönderin, ardından Kiracı olarak giriş yapıp görüntülemeye izin verin.`)}</p>
+      <h3 style="margin-top:6px">${tx('Что нужно для запуска','Canlıya geçiş için gerekenler')}</h3>
+      <ul class="clean small">${(L?['<b>Burada taklit edilenler:</b> e-posta ve SMS, şifresiz giriş, tarayıcıda saklama.','VERBİS\'e kayıt, KVKK aydınlatma metni ve açık rızalar, barındırma seçerken yurt dışına aktarım kurallarına (KVKK m. 9) uyum.','e-Devlet veya kimlik kartı çipinin NFC ile okunması yoluyla kimlik doğrulama, iki aşamalı giriş.','5070 sayılı Kanun\'a göre güvenli elektronik imza; isteğe bağlı olarak e-Devlet kira sözleşmesi hizmetiyle entegrasyon.','Örneklerin Türk avukat tarafından incelenmesi.']:['<b>Имитируется здесь:</b> письма и SMS, вход без пароля, хранение в браузере.','Регистрация в реестре операторов данных VERBİS, информационное уведомление и согласия по KVKK, соблюдение правил передачи данных за границу (ст. 9 KVKK) при выборе хостинга.','Подтверждение личности через e-Devlet или NFC-чтение чипа kimlik kartı, двухфакторный вход.','Квалифицированная электронная подпись по закону № 5070, при желании — интеграция с сервисом договоров аренды e-Devlet.','Проверка образцов практикующим турецким юристом.']).map(x=>`<li>${x}</li>`).join('')}</ul>
+    </div>
+  </section></div>`;
+  renderQRs(app());
+}
+
+/* ---------- образцы ---------- */
+function viewTemplates(type){
+  const has=type&&TPL[type];
+  app().innerHTML=`<div class="stack">
+    <div><h1>${tx('Образцы договоров аренды','Kira sözleşmesi örnekleri')}</h1><p class="muted" style="margin-top:8px;max-width:65ch">${tx('Образцы составлены по Турецкому кодексу обязательств (TBK, закон № 6098). Каждый содержит существенные условия и условия, защищающие обе стороны, со ссылками на статьи. Оригинал на турецком, рядом — русский перевод. Жёлтым отмечены поля, которые заполняются при заключении.','Örnekler Türk Borçlar Kanunu\'na (6098 sayılı Kanun) göre hazırlanmıştır. Her biri temel koşulları ve iki tarafı da koruyan hükümleri madde atıflarıyla içerir. Asıl metin Türkçedir, yanında Rusça çevirisi vardır. Sarı ile işaretli alanlar sözleşme yapılırken doldurulur.')}</p></div>
+    <div class="grid4">${Object.keys(TPL).map(k=>`<div class="card tpl-card">
+      <div class="ic">${ICON[k]}</div><div><h3>${tTitle(k)}</h3><p class="small muted">${tSub(k)}</p></div>
+      <p class="small"><b>${esc(TPL[k].doc[0])}</b><br><span class="muted">${esc(tLaw(k))}</span></p>
+      <ul class="clean muted">${tPros(k).map(p=>`<li>${p}</li>`).join('')}</ul>
+      <div class="row"><a class="btn sm${type===k?' pri':''}" href="#tpl-${k}">${tx('Открыть образец','Örneği aç')}</a><a class="btn sm" href="#new" data-pick="${k}">${tx('Заключить','Sözleşme yap')}</a></div></div>`).join('')}</div>
+    ${has?`<div class="row between"><h2>${tx('Образец','Örnek')}: ${tTitle(type).toLocaleLowerCase(uiLang)}</h2><div class="row">${langToggle2()}<button class="btn sm" id="copyTpl" type="button">${tx('Скопировать текст','Metni kopyala')}</button><a class="btn sm pri" href="#new" data-pick="${type}">${tx('Заключить по этому образцу','Bu örnekle sözleşme yap')}</a></div></div>${contractHTML({type,terms:{}})}`:''}
+  </div>`;
+  app().querySelectorAll('[data-pick]').forEach(a=>a.onclick=()=>{pendingType=a.dataset.pick});
+  const ct=$('#copyTpl');if(ct)ct.onclick=()=>copyText($('#paper').innerText);
+  if(has)bindLangToggle(()=>viewTemplates(type));
+}
+
+/* ---------- регистрация ---------- */
+const pick=a=>a[Math.floor(Math.random()*a.length)];
+const rd=n=>String(Math.floor(Math.random()*10**n)).padStart(n,'0');
+function idCheck(first9){const d=[...first9].map(Number);const d10=((((d[0]+d[2]+d[4]+d[6]+d[8])*7-(d[1]+d[3]+d[5]+d[7]))%10)+10)%10;const d11=(d.reduce((a,b)=>a+b,0)+d10)%10;return first9+d10+d11}
+function idValid(s){return /^[1-9]\d{10}$/.test(s)&&idCheck(s.slice(0,9))===s}
+function idGen(foreign){const b=foreign?'99'+rd(7):String(1+Math.floor(Math.random()*9))+rd(8);return idCheck(b)}
+const DOCS=[['T.C. Kimlik Kartı','T.C. Kimlik Kartı'],['İkamet İzni (вид на жительство)','İkamet İzni'],['Паспорт (Pasaport)','Pasaport']];
+const docName=u=>{const i=u.docIdx??DOCS.findIndex(d=>d[0]===u.docType);return i>=0?pick2(DOCS[i]):(u.docType||'')};
+function idLine(u){return `${u.citizenship==='foreign'?'Yabancı Kimlik No':'T.C. Kimlik No'} ${u.idNo||''}${u.taxNo?tx(', налоговый № ',', vergi no ')+u.taxNo:''}`}
+function docLine(u){return `${docName(u)} № ${u.docNo||''}${u.docValid?tx(', действителен до ',', geçerlilik ')+fmtDate(u.docValid):''}`}
+function viewRegister(){
+  app().innerHTML=`<div class="stack" style="max-width:820px">
+   <div><h1>${tx('Регистрация','Kayıt')}</h1><p class="muted" style="margin-top:8px">${tx('Данные вводятся один раз и не попадают в текст договоров: они хранятся в Приложении 2 (Ek-2) и раскрываются только с вашего согласия. Вы получите личный ID для входа и заключения договоров.','Bilgiler bir kez girilir ve sözleşme metnine yazılmaz: Ek-2\'de saklanır ve yalnızca sizin onayınızla açılır. Giriş ve sözleşme yapmak için kişisel bir ID alırsınız.')}</p></div>
+   <div class="notice"><b>${tx('Прототип.','Prototip.')}</b> ${tx('Вводите только вымышленные данные. Кнопка «Заполнить тестовыми данными» создаст корректный по формату идентификационный номер. В рабочей версии личность подтверждается через e-Devlet или считывание чипа kimlik kartı.','Yalnızca hayali bilgiler girin. "Test verileriyle doldur" düğmesi biçimi doğru bir kimlik numarası oluşturur. Gerçek sürümde kimlik, e-Devlet veya kimlik kartı çipinin okunmasıyla doğrulanır.')}</div>
+   <form id="reg" autocomplete="off" novalidate>
+    <fieldset><legend>${tx('Личные данные','Kişisel bilgiler')}</legend>
+      <label>${tx('Имя (Ad)','Ad')}<input id="r_first" required></label><label>${tx('Фамилия (Soyad)','Soyad')}<input id="r_last" required></label>
+      <p class="hint wide">${tx('Имя, фамилию, место рождения и адрес укажите латиницей точно как в kimlik kartı, ikamet izni или паспорте: турецкие суды, tapu и нотариусы работают с этими данными.','Ad, soyad, doğum yeri ve adresi kimlik kartı, ikamet izni veya pasaporttaki gibi Latin harfleriyle yazın; mahkemeler, tapu ve noterler bu bilgileri kullanır.')}</p>
+      <label>${tx('Дата рождения','Doğum tarihi')}<input id="r_birth" type="date" required></label><label>${tx('Место рождения','Doğum yeri')}<input id="r_birthPlace" required></label>
+      <label>${tx('Гражданство','Uyruk')}<select id="r_cit"><option value="TR">${tx('Гражданин Турции','T.C. vatandaşı')}</option><option value="foreign">${tx('Иностранный гражданин','Yabancı uyruklu')}</option></select></label>
+      <label><span id="idLbl">T.C. Kimlik No</span><input id="r_id" inputmode="numeric" maxlength="11" placeholder="${tx('11 цифр','11 hane')}" required><span class="hint" id="idHint"></span></label>
+      <label>${tx('Налоговый номер (Vergi No)','Vergi No')}<input id="r_tax" inputmode="numeric" maxlength="10" placeholder="${tx('10 цифр, необязательно','10 hane, isteğe bağlı')}"></label>
+    </fieldset>
+    <fieldset><legend>${tx('Документ, удостоверяющий личность','Kimlik belgesi')}</legend>
+      <label class="wide">${tx('Вид документа','Belge türü')}<select id="r_docType">${DOCS.map((d,i)=>`<option value="${i}">${pick2(d)}</option>`).join('')}</select></label>
+      <label>${tx('Серия и номер документа','Belge seri ve numarası')}<input id="r_docNo" required></label>
+      <label>${tx('Действителен до','Geçerlilik tarihi')}<input id="r_docValid" type="date" required></label>
+      <label class="wide">${tx('Адрес регистрации (yerleşim yeri adresi)','Yerleşim yeri adresi')}<input id="r_addr" required></label>
+    </fieldset>
+    <fieldset><legend>${tx('Контакты для подтверждения запросов','Talep onayı için iletişim bilgileri')}</legend>
+      <label>${tx('Электронная почта','E-posta')}<input id="r_email" type="email" required></label><label>${tx('Мобильный телефон','Cep telefonu')}<input id="r_phone" type="tel" placeholder="+90 5XX XXX XX XX" required></label>
+    </fieldset>
+    <label class="check"><input type="checkbox" id="r_ok"><span>${tx('Я ознакомлен с информационным уведомлением (aydınlatma metni) и даю явное согласие (açık rıza) на обработку моих персональных данных по Закону Турции № 6698 (KVKK): хранение в реестре и раскрытие только с моего согласия, а также судам, уполномоченным государственным органам и управлению tapu.','Aydınlatma metnini okudum. Kişisel verilerimin 6698 sayılı KVKK uyarınca sicilde saklanmasına ve yalnızca onayımla ya da mahkemelere, yetkili kamu kurumlarına ve tapu müdürlüğüne açıklanmasına açık rıza veriyorum.')}</span></label>
+    <p class="hint no" id="regErr" hidden></p>
+    <div class="row"><button class="btn pri" type="submit">${tx('Получить ID','ID al')}</button><button class="btn" type="button" id="fillReg">${tx('Заполнить тестовыми данными','Test verileriyle doldur')}</button></div>
+   </form><div id="regOut"></div></div>`;
+  const sync=()=>{const f=$('#r_cit').value==='foreign';$('#idLbl').textContent=f?'Yabancı Kimlik No':'T.C. Kimlik No';
+    $('#idHint').textContent=f?tx('11 цифр, начинается с 99. Указан в ikamet izni','11 hane, 99 ile başlar. İkamet izninde yazılıdır'):tx('11 цифр, проверяется контрольная сумма','11 hane, kontrol haneleri doğrulanır');
+    if(!f)$('#r_docType').value='0';else if($('#r_docType').value==='0')$('#r_docType').value='1'};
+  $('#r_cit').onchange=sync;sync();
+  $('#fillReg').onclick=()=>{const foreign=Math.random()<.5;const fem=Math.random()<.5;const set=(id,v)=>{$('#'+id).value=v};
+    set('r_cit',foreign?'foreign':'TR');sync();
+    set('r_first',foreign?pick(fem?['Mariia','Anna','Olga']:['Aleksei','Dmitrii','Igor']):pick(fem?['Ayşe','Elif','Zeynep']:['Mehmet','Ahmet','Emre']));
+    set('r_last',foreign?pick(['Sokolov','Petrov','Orlov'])+(fem?'a':''):pick(['Yılmaz','Kaya','Demir','Şahin','Çelik','Öztürk']));
+    set('r_birth',`19${80+Math.floor(Math.random()*19)}-0${1+Math.floor(Math.random()*9)}-1${Math.floor(Math.random()*9)}`);set('r_birthPlace',foreign?'Moskova, Rusya':'Antalya');
+    set('r_id',idGen(foreign));set('r_tax','');set('r_docNo',foreign?'A'+rd(8):'A'+rd(2)+'Z'+rd(5));set('r_docValid','2030-06-30');
+    set('r_addr','Antalya, Konyaaltı, Liman Mah. '+(1+Math.floor(Math.random()*90))+'. Sok. No: '+(1+Math.floor(Math.random()*40)));
+    set('r_email','user'+rd(3)+'@example.com');set('r_phone','+90 532 000 '+rd(2)+' '+rd(2));$('#r_ok').checked=true;$('#regErr').hidden=true};
+  $('#reg').onsubmit=e=>{e.preventDefault();const g=id=>$('#'+id).value.trim();const err=$('#regErr');
+    const fail=(id,msg)=>{err.textContent=msg;err.hidden=false;const el=$('#'+id);if(el)el.focus();};
+    for(const id of ['r_first','r_last','r_birth','r_birthPlace','r_id','r_docNo','r_docValid','r_addr','r_email','r_phone'])if(!g(id))return fail(id,tx('Заполните все обязательные поля.','Tüm zorunlu alanları doldurun.'));
+    if(['r_first','r_last','r_birthPlace','r_addr','r_docNo'].some(id=>/[А-Яа-яЁё]/.test(g(id))))return fail('r_first',tx('Укажите данные латиницей, как в документе.','Bilgileri belgedeki gibi Latin harfleriyle girin.'));
+    const foreign=g('r_cit')==='foreign';const idn=g('r_id').replace(/\s/g,'');
+    if(!idValid(idn))return fail('r_id',tx('Идентификационный номер не прошёл проверку: нужно 11 цифр с верными контрольными цифрами.','Kimlik numarası doğrulanamadı: kontrol haneleri doğru olan 11 haneli bir numara girin.'));
+    if(foreign&&!idn.startsWith('99'))return fail('r_id',tx('Номер иностранца (Yabancı Kimlik No) начинается с 99.','Yabancı Kimlik No 99 ile başlar.'));
+    if(!foreign&&idn.startsWith('99'))return fail('r_id',tx('Номер, начинающийся с 99, выдаётся иностранцам. Проверьте гражданство.','99 ile başlayan numaralar yabancılara verilir. Uyruk seçimini kontrol edin.'));
+    const tax=g('r_tax');if(tax&&!/^\d{10}$/.test(tax))return fail('r_tax',tx('Налоговый номер (Vergi No) — 10 цифр.','Vergi No 10 haneli olmalıdır.'));
+    if(g('r_docValid')<iso(Date.now()))return fail('r_docValid',tx('Срок действия документа истёк.','Belgenin geçerlilik süresi dolmuş.'));
+    if(!/^\S+@\S+\.\S+$/.test(g('r_email')))return fail('r_email',tx('Проверьте адрес электронной почты.','E-posta adresini kontrol edin.'));
+    const ph=g('r_phone').replace(/\D/g,'');const okPh=(ph.length===12&&ph.startsWith('905'))||(ph.length===11&&ph.startsWith('05'))||(ph.length===10&&ph.startsWith('5'));
+    if(!okPh)return fail('r_phone',tx('Укажите турецкий мобильный номер в формате +90 5XX XXX XX XX.','Cep telefonunu +90 5XX XXX XX XX biçiminde girin.'));
+    if(!$('#r_ok').checked)return fail('r_ok',tx('Без явного согласия (açık rıza) на обработку данных регистрация невозможна (KVKK, ст. 5).','Açık rıza verilmeden kayıt yapılamaz (KVKK m. 5).'));
+    const di=+g('r_docType');
+    const u=addUser({first:g('r_first'),last:g('r_last'),middle:'',birth:g('r_birth'),birthPlace:g('r_birthPlace'),citizenship:foreign?'foreign':'TR',idNo:idn,taxNo:tax,
+      docIdx:di,docType:DOCS[di][1],docNo:g('r_docNo'),docValid:g('r_docValid'),addr:g('r_addr'),email:g('r_email'),phone:g('r_phone'),consentAt:Date.now()});
+    notify(u.id,['email','sms'],[`Регистрация в реестре АрендаID завершена. Ваш ID: ${u.id}.`,`ArendaID sicilinde kaydınız tamamlandı. ID'niz: ${u.id}.`]);save();setMe(u.id);
+    $('#reg').hidden=true;$('#regOut').innerHTML=`<div class="card" style="align-items:flex-start"><div class="eyebrow">${tx('Ваш личный ID','Kişisel ID\'niz')}</div><span class="code big">${esc(u.id)}</span>
+     <p>${tx('Сохраните его. ID нужен для входа и для заключения договоров. Код входа в прототипе — последние 4 цифры телефона.','Bu ID\'yi saklayın; giriş ve sözleşme yapmak için gereklidir. Prototipte giriş kodu telefonunuzun son 4 hanesidir.')}</p>
+     <div class="row"><button class="btn" type="button" id="cpId">${tx('Скопировать ID','ID\'yi kopyala')}</button><a class="btn pri" href="#new">${tx('Заключить договор','Sözleşme yap')}</a><a class="btn" href="#cabinet">${tx('Личный кабинет','Hesabım')}</a></div></div>`;
+    $('#cpId').onclick=()=>copyText(u.id);};
+}
+
+/* ---------- вход ---------- */
+function loginForm(msg){
+  const ids=Object.values(S.users).filter(u=>u.demo);
+  return `<div class="card" style="max-width:520px"><h2>${tx('Вход','Giriş')}</h2><p class="small muted">${msg||tx('Введите ваш ID и последние 4 цифры телефона.','ID\'nizi ve telefonunuzun son 4 hanesini girin.')}</p>
+   <form id="login"><label>ID<input id="l_id" class="mono" placeholder="ID-XXXX-XXXX" required></label><label>${tx('Последние 4 цифры телефона','Telefonun son 4 hanesi')}<input id="l_code" inputmode="numeric" maxlength="4" required></label>
+   <div class="row"><button class="btn pri" type="submit">${tx('Войти','Giriş yap')}</button><a class="btn" href="#register">${tx('Регистрация','Kayıt ol')}</a></div></form>
+   ${ids.length?`<div class="small muted">${tx('Тестовые аккаунты:','Test hesapları:')} ${ids.map(u=>`<button type="button" class="btn sm" data-demo="${esc(u.id)}">${esc(u.id)}</button>`).join(' ')}</div>`:''}</div>`;
+}
+function bindLogin(after){
+  const f=$('#login');if(!f)return;
+  f.onsubmit=e=>{e.preventDefault();const u=S.users[normId($('#l_id').value)];
+    if(!u||String(u.phone).replace(/\D/g,'').slice(-4)!==$('#l_code').value.trim()){toast(tx('ID или код не подходят. Проверьте и повторите.','ID veya kod hatalı. Kontrol edip tekrar deneyin.'));return}
+    setMe(u.id);after()};
+  app().querySelectorAll('[data-demo]').forEach(b=>b.onclick=()=>{const u=S.users[b.dataset.demo];$('#l_id').value=u.id;$('#l_code').value=String(u.phone).replace(/\D/g,'').slice(-4)});
+}
+
+/* ---------- кабинет ---------- */
+function reqCardOwner(r){
+  const c=S.contracts[r.contractId];const st=STATUS[r.status];const live=r.status==='approved';
+  return `<div class="req ${r.status==='pending'?'attn':live?'live':''}">
+    <div class="row between"><div class="row"><span class="pill ${st[1]}">${pick2(st[0])}</span><span class="small muted">${fmtDT(r.createdAt)}</span></div>
+    ${live?`<span class="timer" data-exp="${r.expiresAt}" style="font-size:18px">${mmss(r.expiresAt-Date.now())}</span>`:''}</div>
+    <dl class="kv"><dt>${tx('Кто запрашивает','Talep eden')}</dt><dd>${esc(r.requesterLabel)}${r.requesterId?` · <span class="code">${esc(r.requesterId)}</span>`:tx(' · без входа в реестр',' · sicile giriş yapmamış')}</dd>
+    <dt>${tx('Цель','Amaç')}</dt><dd>${esc(purposeText(r))}</dd><dt>${tx('Ваш ID2','ID2 kodunuz')}</dt><dd><span class="code">${esc(r.id2)}</span> · ${tx('договор №','sözleşme no')} ${esc(c?.no)} · ${roleUI(r.role)}</dd></dl>
+    ${r.status==='pending'?`<div class="row"><button class="btn good" type="button" data-ok="${r.id}">${tx('Разрешить на 3 минуты','3 dakika izin ver')}</button><button class="btn bad" type="button" data-no="${r.id}">${tx('Отклонить','Reddet')}</button></div>`:''}
+    ${live?`<div class="row"><button class="btn bad sm" type="button" data-rv="${r.id}">${tx('Отозвать доступ сейчас','Erişimi şimdi geri al')}</button></div>`:''}
+    ${myReqs.includes(r.id)&&r.status!=='pending'?`<a class="small" href="#check-${r.id2}">${tx('Вернуться к экрану запроса','Talep ekranına dön')}</a>`:''}
+  </div>`;
+}
+function viewCabinet(){
+  const u=me&&S.users[me];
+  if(!u){app().innerHTML=`<div class="stack"><h1>${tx('Личный кабинет','Hesabım')}</h1>${loginForm()}</div>`;bindLogin(()=>viewCabinet());return}
+  const mine=Object.values(S.contracts).filter(c=>c.parties.landlord.userId===u.id||c.parties.tenant.userId===u.id).sort((a,b)=>b.createdAt-a.createdAt);
+  const reqs=Object.values(S.requests).filter(r=>r.ownerId===u.id).sort((a,b)=>b.createdAt-a.createdAt);
+  const active=reqs.filter(r=>r.status==='pending'||r.status==='approved');const past=reqs.filter(r=>!(r.status==='pending'||r.status==='approved'));
+  const pend=active.filter(r=>r.status==='pending').length;
+  const inbox=S.outbox.filter(m=>m.to===u.id).slice(0,30);
+  const chName={email:tx('Почта','E-posta'),sms:'SMS',cabinet:tx('Кабинет','Hesap')};
+  app().innerHTML=`<div class="stack">
+   <div class="row between"><div><div class="eyebrow">${tx('Личный кабинет','Hesabım')}</div><h1 style="margin-top:6px">${esc(fio(u))}</h1></div><div class="row"><span class="code big" style="font-size:20px">${esc(u.id)}</span><button class="btn sm" type="button" id="cpMe">${tx('Скопировать ID','ID\'yi kopyala')}</button></div></div>
+   ${pend?`<div class="notice"><b>${tx('Новые запросы:','Yeni talepler:')}</b> ${pend}. ${tx('Кто-то хочет увидеть ваши реквизиты. Решите, разрешить ли доступ.','Biri kimlik bilgilerinizi görmek istiyor. Erişime izin verip vermeyeceğinize karar verin.')}</div>`:''}
+   <div class="grid2">
+    <section class="card"><div class="row between"><h2>${tx('Запросы на мои данные','Bilgilerim için talepler')}</h2><span class="pill">${reqs.length}</span></div>
+      ${active.length?active.map(reqCardOwner).join(''):`<p class="small muted">${tx('Активных запросов нет. Когда кто-то отсканирует QR-код в вашем договоре, запрос появится здесь, а уведомление придёт на почту и по SMS.','Aktif talep yok. Biri sözleşmenizdeki QR kodu okuttuğunda talep burada görünür; e-posta ve SMS bildirimi de gönderilir.')}</p>`}
+      ${past.length?`<details><summary class="small" style="cursor:pointer">${tx('Журнал доступа','Erişim kaydı')} (${past.length})</summary><div class="tbl-wrap" style="margin-top:8px"><table class="list"><tr><th>${tx('Дата','Tarih')}</th><th>${tx('Кто','Kim')}</th><th>ID2</th><th>${tx('Итог','Sonuç')}</th></tr>${past.map(r=>`<tr><td class="small">${fmtDT(r.createdAt)}</td><td class="small">${esc(r.requesterLabel)}</td><td><span class="code">${esc(r.id2)}</span></td><td><span class="pill ${STATUS[r.status][1]}">${pick2(STATUS[r.status][0])}</span></td></tr>`).join('')}</table></div></details>`:''}
+    </section>
+    <section class="card"><div class="row between"><h2>${tx('Мои договоры','Sözleşmelerim')}</h2><a class="btn sm pri" href="#new">${tx('Новый договор','Yeni sözleşme')}</a></div>
+      ${mine.length?`<div class="tbl-wrap"><table class="list"><tr><th>${tx('№','No')}</th><th>${tx('Вид','Tür')}</th><th>${tx('Моя роль и ID2','Rolüm ve ID2')}</th><th>${tx('Статус','Durum')}</th><th></th></tr>${mine.map(c=>{const role=c.parties.landlord.userId===u.id?'landlord':'tenant';const ok=c.parties.landlord.confirmed&&c.parties.tenant.confirmed;
+        return `<tr><td style="font-variant-numeric:tabular-nums">${esc(c.no)}</td><td>${tTitle(c.type)}</td><td class="small">${roleUI(role)}<br><span class="code">${esc(c.parties[role].id2)}</span></td><td>${ok?`<span class="pill good">${tx('Подтверждён','Onaylandı')}</span>`:c.parties[role].confirmed?`<span class="pill warn">${tx('Ждёт другую сторону','Diğer taraf bekleniyor')}</span>`:`<button class="btn sm good" type="button" data-conf="${c.id}">${tx('Подтвердить участие','Katılımı onayla')}</button>`}</td><td><a class="btn sm" href="#doc-${c.id}">${tx('Открыть','Aç')}</a></td></tr>`}).join('')}</table></div>`:`<p class="small muted">${tx('Договоров пока нет.','Henüz sözleşme yok.')}</p>`}
+    </section>
+    <section class="card"><h2>${tx('Мои данные','Bilgilerim')}</h2><p class="small muted">${tx('Видны только вам. В тексте договоров их нет: они составляют Приложение 2 (Ek-2).','Yalnızca siz görebilirsiniz. Sözleşme metninde yer almaz, Ek-2\'yi oluşturur.')}</p>
+      <dl class="kv"><dt>${tx('Имя и фамилия','Ad soyad')}</dt><dd>${esc(fio(u))}</dd><dt>${tx('Дата и место рождения','Doğum tarihi ve yeri')}</dt><dd>${fmtDate(u.birth)}, ${esc(u.birthPlace||'')}</dd><dt>${tx('Идентификационный №','Kimlik numarası')}</dt><dd>${esc(idLine(u))}</dd><dt>${tx('Документ','Belge')}</dt><dd>${esc(docLine(u))}</dd><dt>${tx('Адрес регистрации','Yerleşim yeri adresi')}</dt><dd>${esc(u.addr)}</dd><dt>${tx('Почта','E-posta')}</dt><dd>${esc(u.email)}</dd><dt>${tx('Телефон','Telefon')}</dt><dd>${esc(u.phone)}</dd><dt>${tx('Согласие по KVKK (açık rıza)','KVKK açık rızası')}</dt><dd>${u.consentAt?tx('дано ','verildi ')+fmtDT(u.consentAt):'—'}</dd></dl>
+    </section>
+    <section class="card"><div class="row between"><h2>${tx('Уведомления','Bildirimler')}</h2><span class="pill stamp">${tx('почта и SMS имитируются','e-posta ve SMS taklit edilir')}</span></div>
+      <div>${inbox.length?inbox.map(m=>`<div class="msg"><span class="pill ${m.ch==='sms'?'stamp':m.ch==='email'?'':'good'}">${chName[m.ch]}</span><div><div class="small muted">${fmtDT(m.at)} · ${esc(m.addr||tx('личный кабинет','hesap'))}</div>${esc(pick2(m.text))}</div></div>`).join(''):`<p class="small muted">${tx('Уведомлений нет.','Bildirim yok.')}</p>`}</div>
+    </section>
+   </div></div>`;
+  $('#cpMe').onclick=()=>copyText(u.id);
+  bindReqButtons();
+  app().querySelectorAll('[data-conf]').forEach(b=>b.onclick=()=>{const c=S.contracts[b.dataset.conf];const role=c.parties.landlord.userId===u.id?'landlord':'tenant';c.parties[role].confirmed=true;c.parties[role].confirmedAt=Date.now();const other=c.parties[role==='landlord'?'tenant':'landlord'].userId;notify(other,['cabinet'],[`Вторая сторона подтвердила участие в договоре № ${c.no}.`,`Diğer taraf ${c.no} numaralı sözleşmeye katılımını onayladı.`]);save();toast(tx('Участие подтверждено','Katılım onaylandı'));viewCabinet()});
+}
+function bindReqButtons(){
+  app().querySelectorAll('[data-ok]').forEach(b=>b.onclick=()=>{decide(b.dataset.ok,true);toast(tx('Доступ открыт на 3 минуты','Erişim 3 dakikalığına açıldı'));route()});
+  app().querySelectorAll('[data-no]').forEach(b=>b.onclick=()=>{decide(b.dataset.no,false);toast(tx('Запрос отклонён','Talep reddedildi'));route()});
+  app().querySelectorAll('[data-rv]').forEach(b=>b.onclick=()=>{revoke(b.dataset.rv);toast(tx('Доступ отозван','Erişim geri alındı'));route()});
+}
+
+/* ---------- новый договор ---------- */
+function field(k,val){const f=F[k];const id='n_'+k;const w=f.w?' class="wide"':'';
+  if(f.t==='select')return `<label${w}>${fLabel(k)}<select id="${id}">${f.o.map((o,i)=>`<option value="${i}"${String(i)===String(val)?' selected':''}>${esc(o[uiLang])}</option>`).join('')}</select></label>`;
+  return `<label${w}>${fLabel(k)}<input id="${id}" type="${f.t||'text'}" value="${esc(val??'')}" required${f.t==='number'?' min="0" step="any"':''}></label>`;}
+function addMonthsISO(isoStr,m){const d=new Date(isoStr+'T00:00');d.setMonth(d.getMonth()+m);d.setDate(d.getDate()-1);return iso(d)}
+function viewNew(){
+  const u=me&&S.users[me];
+  if(!u){app().innerHTML=`<div class="stack"><h1>${tx('Новый договор','Yeni sözleşme')}</h1>${loginForm(tx('Чтобы заключить договор, войдите в реестр. Вы станете одной из сторон.','Sözleşme yapmak için sicile giriş yapın. Taraflardan biri siz olacaksınız.'))}</div>`;bindLogin(()=>viewNew());return}
+  const type=pendingType;const T=TPL[type];const start=addDays(7);
+  const defs={startDate:start,endDate:addMonthsISO(start,12),noticeDays:30};
+  app().innerHTML=`<div class="stack" style="max-width:860px">
+   <div><h1>${tx('Новый договор','Yeni sözleşme')}</h1><p class="muted" style="margin-top:8px">${tx('Укажите только ID сторон. Имена, номера kimlik и адреса в текст договора не попадут: они войдут в Приложение 2 (Ek-2), а каждая сторона получит новый код ID2. Договор формируется на турецком с русским переводом.','Yalnızca tarafların ID\'lerini girin. Adlar, kimlik numaraları ve adresler sözleşme metnine yazılmaz; Ek-2\'ye girer ve her taraf yeni bir ID2 kodu alır. Sözleşme Türkçe hazırlanır, Rusça çevirisi de oluşturulur.')}</p></div>
+   <form id="nf" autocomplete="off">
+    <fieldset style="display:flex;flex-direction:column"><legend>${tx('Образец','Örnek')}</legend><div class="tplpick">${Object.keys(TPL).map(k=>`<label><input type="radio" name="tp" value="${k}"${k===type?' checked':''}>${tTitle(k)}</label>`).join('')}</div><p class="hint">${esc(T.doc[0])} · ${esc(tLaw(type))}</p></fieldset>
+    <fieldset><legend>${tx('Стороны','Taraflar')}</legend>
+      <label class="wide">${tx('Ваша роль','Rolünüz')}<span class="seg"><label><input type="radio" name="myrole" value="landlord" checked>${tx('Арендодатель (Kiraya Veren)','Kiraya Veren')}</label><label><input type="radio" name="myrole" value="tenant">${tx('Арендатор (Kiracı)','Kiracı')}</label></span></label>
+      <label>${tx('Ваш ID','ID\'niz')}<input class="mono" value="${esc(u.id)}" disabled></label>
+      <label><span id="otherLbl">${otherIdLabel('tenant')}</span><input id="n_other" class="mono" placeholder="ID-XXXX-XXXX" required><span class="hint" id="otherHint">${tx('Введите ID второй стороны','Diğer tarafın ID\'sini girin')}</span></label>
+    </fieldset>
+    <fieldset><legend>${tx('Объект','Kiralanan')}</legend>${T.obj.map(k=>field(k)).join('')}</fieldset>
+    <fieldset><legend>${tx('Срок','Süre')}</legend>${T.term.map(k=>field(k,defs[k])).join('')}${T.realty?`<p class="hint wide">${tx('Договор ежегодно продлевается, если арендатор не откажется письменно за 15 дней до конца срока (ст. 347 TBK).','Kiracı süre bitiminden en az 15 gün önce yazılı bildirimde bulunmazsa sözleşme her yıl uzar (TBK m. 347).')}</p>`:''}</fieldset>
+    <fieldset><legend>${tx('Платежи (в турецких лирах)','Ödemeler (Türk lirası)')}</legend>${T.payF.map(k=>field(k)).join('')}${T.realty?`<p class="hint wide">${tx('Повышение не может превышать среднегодовой индекс TÜFE (ст. 344 TBK). Депозит — не более трёх месячных плат (ст. 342 TBK).','Artış TÜFE on iki aylık ortalamasını aşamaz (TBK m. 344). Güvence en fazla üç aylık kira bedeli olabilir (TBK m. 342).')}</p>`:''}</fieldset>
+    <fieldset><legend>${tx('Место заключения','Sözleşme yeri')}</legend>${field('city')}</fieldset>
+    <div id="notes" class="stack" style="gap:6px"></div>
+    <div class="row"><button class="btn pri" type="submit">${tx('Создать договор','Sözleşmeyi oluştur')}</button><button class="btn" type="button" id="exFill">${tx('Заполнить примером','Örnekle doldur')}</button></div>
+   </form></div>`;
+  app().querySelectorAll('input[name=tp]').forEach(r=>r.onchange=()=>{pendingType=r.value;viewNew()});
+  const otherRole=()=>app().querySelector('input[name=myrole]:checked').value==='landlord'?'tenant':'landlord';
+  app().querySelectorAll('input[name=myrole]').forEach(r=>r.onchange=()=>{$('#otherLbl').textContent=otherIdLabel(otherRole())});
+  const chk=()=>{const id=normId($('#n_other').value);const h=$('#otherHint');if(!id){h.className='hint';h.textContent=tx('Введите ID второй стороны','Diğer tarafın ID\'sini girin');return false}
+    if(id===u.id){h.className='hint no';h.textContent=tx('Это ваш ID. Укажите ID второй стороны.','Bu sizin ID\'niz. Diğer tarafın ID\'sini girin.');return false}
+    if(S.users[id]){h.className='hint ok';h.textContent=tx('ID найден в реестре','ID sicilde bulundu');return true}h.className='hint no';h.textContent=tx('ID не найден. Вторая сторона должна сначала зарегистрироваться.','ID bulunamadı. Diğer tarafın önce kayıt olması gerekir.');return false};
+  $('#n_other').oninput=chk;
+  const keys=[...T.obj,...T.term,...T.payF,'city'];
+  const read=()=>{const t={};keys.forEach(k=>{const el=$('#n_'+k);if(el)t[k]=el.value.trim()});return t};
+  const noteChk=()=>{const list=notesFor(type,read(),true);const ti=termInfo(read());
+    const head=ti.months!==null&&!ti.bad?[['ok',`Срок около ${ti.months} мес.`,`Süre yaklaşık ${ti.months} ay.`]]:[];
+    $('#notes').innerHTML=[...head,...list].map(n=>`<p class="hint wide ${n[0]==='info'?'':n[0]}">${esc(noteText(n))}</p>`).join('');return !list.some(n=>n[0]==='no')};
+  keys.forEach(k=>{const el=$('#n_'+k);if(el)el.addEventListener('input',noteChk)});noteChk();
+  $('#exFill').onclick=()=>{keys.forEach(k=>{const el=$('#n_'+k);if(el&&F[k].ex!==undefined&&F[k].t!=='select')el.value=F[k].ex});
+    if(!$('#n_other').value){const o=Object.values(S.users).find(x=>x.id!==u.id);if(o){$('#n_other').value=o.id;chk()}}noteChk()};
+  $('#nf').onsubmit=e=>{e.preventDefault();if(!chk()){toast(tx('Проверьте ID второй стороны','Diğer tarafın ID\'sini kontrol edin'));return}
+    if(!noteChk()){toast(tx('Исправьте отмеченные красным условия','Kırmızıyla işaretli koşulları düzeltin'));$('#notes').scrollIntoView({block:'center'});return}
+    const mine=app().querySelector('input[name=myrole]:checked').value;const ids={[mine]:u.id,[mine==='landlord'?'tenant':'landlord']:normId($('#n_other').value)};
+    const c=createContract(type,read(),ids,u.id,false);save();toast(tx('Договор создан, ID2 выданы','Sözleşme oluşturuldu, ID2 kodları verildi'));location.hash='doc-'+c.id;};
+}
+
+/* ---------- договор ---------- */
+function viewDoc(cid){
+  const c=S.contracts[cid];
+  if(!c){app().innerHTML=`<div class="card"><h2>${tx('Договор не найден','Sözleşme bulunamadı')}</h2><p class="muted">${tx('Ссылка устарела или договор создан в другом браузере. В прототипе данные хранятся локально.','Bağlantı eskimiş veya sözleşme başka bir tarayıcıda oluşturulmuş olabilir. Prototipte veriler yerel olarak saklanır.')}</p><a class="btn" href="#cabinet">${tx('В личный кабинет','Hesabıma git')}</a></div>`;return}
+  const myRole=me?['landlord','tenant'].find(r=>c.parties[r].userId===me):null;
+  const notes=notesFor(c.type,c.terms,false).filter(n=>n[0]!=='no');
+  app().innerHTML=`<div class="stack">
+   <div class="row between"><div><div class="eyebrow">${tx('Договор №','Sözleşme no')} ${esc(c.no)}</div><h1 style="margin-top:6px">${esc(tDoc(c.type))}</h1></div>
+    <div class="row">${myRole&&!c.parties[myRole].confirmed?`<button class="btn good" type="button" id="confDoc">${tx('Подтвердить участие','Katılımı onayla')}</button>`:''}<button class="btn" type="button" id="copyDoc">${tx('Скопировать текст','Metni kopyala')}</button>${me?`<a class="btn" href="#cabinet">${tx('Мои договоры','Sözleşmelerim')}</a>`:''}</div></div>
+   <div class="row between"><p class="small muted" style="max-width:60ch">${tx('В тексте нет персональных данных: они в Приложении 2 (Ek-2). QR-коды ведут на проверку ID2, реквизиты откроются только с согласия владельца. Юридическую силу имеет турецкий текст.','Metinde kişisel veri yoktur; bunlar Ek-2\'dedir. QR kodlar ID2 doğrulamasına yönlendirir; kimlik bilgileri yalnızca sahibinin onayıyla açılır. Hukuken geçerli olan Türkçe metindir.')}</p>${langToggle2()}</div>
+   ${notes.map(n=>`<div class="notice"><b>${n[0]==='warn'?tx('Обратите внимание.','Dikkat.'):tx('К сведению.','Bilgi.')}</b> ${esc(noteText(n))}</div>`).join('')}
+   ${contractHTML(c)}</div>`;
+  renderQRs(app());$('#copyDoc').onclick=()=>copyText($('#paper').innerText);
+  bindLangToggle(()=>viewDoc(cid));
+  const cd=$('#confDoc');if(cd)cd.onclick=()=>{c.parties[myRole].confirmed=true;c.parties[myRole].confirmedAt=Date.now();save();toast(tx('Участие подтверждено','Katılım onaylandı'));viewDoc(cid)};
+}
+
+/* ---------- проверка ID2 ---------- */
+function viewCheck(id2){
+  const u=me&&S.users[me];
+  app().innerHTML=`<div class="stack" style="max-width:860px">
+   <div><h1>${tx('Проверка ID2','ID2 doğrulama')}</h1><p class="muted" style="margin-top:8px">${tx('Введите код ID2 из договора или отсканируйте QR-код. Владелец данных получит запрос и решит, показать ли вам реквизиты.','Sözleşmedeki ID2 kodunu girin veya QR kodu okutun. Bilgilerin sahibine talep gider ve kimlik bilgilerini size gösterip göstermeyeceğine karar verir.')}</p></div>
+   <form id="cf" autocomplete="off"><fieldset>
+     <label class="wide">${tx('Код ID2','ID2 kodu')}<input id="c_id2" class="mono" placeholder="D2-XXXXX-XXXXX" value="${esc(id2||'')}" required></label>
+     <div class="wide" id="c_info"></div>
+     <label>${tx('Кто запрашивает','Talep eden')}<input id="c_who" ${u?`value="${esc(u.first+' '+u.last[0]+'.')}"`:`placeholder="${tx('Имя или организация','Ad soyad veya kurum')}"`} required></label>
+     <label>${tx('Цель запроса','Talebin amacı')}<select id="c_purpose">${PURPOSES.map((p,i)=>`<option value="${i}">${pick2(p)}</option>`).join('')}</select></label>
+     <p class="wide small muted">${u?tx(`Запрос уйдёт от вашего ID <span class="code">${esc(u.id)}</span>.`,`Talep <span class="code">${esc(u.id)}</span> ID'nizden gönderilecek.`):tx('Вы не вошли в реестр. Владелец увидит только указанное вами имя. <a href="#cabinet">Войти</a>','Sicile giriş yapmadınız. Bilgi sahibi yalnızca girdiğiniz adı görür. <a href="#cabinet">Giriş yap</a>')}</p>
+   </fieldset><div class="row"><button class="btn pri" type="submit">${tx('Запросить реквизиты','Kimlik bilgilerini talep et')}</button></div></form>
+   <section class="stack" id="myreqs"></section></div>`;
+  const info=()=>{const k=normId($('#c_id2').value);const l=S.id2[k];const box=$('#c_info');
+    if(!k){box.innerHTML='';return null}
+    if(!l){box.innerHTML=`<span class="hint no">${tx('Код не найден в реестре. Проверьте написание.','Kod sicilde bulunamadı. Yazımı kontrol edin.')}</span>`;return null}
+    const c=S.contracts[l.contractId];box.innerHTML=`<span class="hint ok">${tx(`Код действителен: ${roleUI(l.role).toLowerCase()} по договору № ${esc(c.no)} (${tTitle(c.type).toLowerCase()}) от ${fmtDate(iso(c.createdAt))}.`,`Kod geçerli: ${fmtDate(iso(c.createdAt))} tarihli ${esc(c.no)} numaralı sözleşmede (${tTitle(c.type).toLocaleLowerCase('tr')}) ${roleUI(l.role)}.`)}</span>`;return k};
+  $('#c_id2').oninput=info;info();
+  $('#cf').onsubmit=e=>{e.preventDefault();const k=info();if(!k){toast(tx('Введите действующий код ID2','Geçerli bir ID2 kodu girin'));return}
+    createRequest(k,u?u.id:null,$('#c_who').value.trim(),+$('#c_purpose').value);toast(tx('Запрос отправлен владельцу','Talep bilgi sahibine gönderildi'));renderMyReqs();
+    $('#myreqs').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth',block:'start'})};
+  renderMyReqs();
+}
+function renderMyReqs(){
+  const box=$('#myreqs');if(!box)return;
+  const list=myReqs.map(id=>S.requests[id]).filter(Boolean);
+  if(!list.length){box.innerHTML='';return}
+  box.innerHTML=`<h2>${tx('Ваши запросы','Talepleriniz')}</h2>`+list.map(r=>{
+    const st=STATUS[r.status];const owner=S.users[r.ownerId];const c=S.contracts[r.contractId];
+    let body='';
+    if(r.status==='pending')body=`<div class="row"><span class="wait"></span><span>${tx('Ждём ответа владельца данных.','Bilgi sahibinin yanıtı bekleniyor.')}</span></div>
+      <p class="small muted">${tx('Уведомления отправлены:','Bildirim gönderildi:')} ${tx('почта','e-posta')} ${esc(maskEmail(owner.email))}, SMS ${esc(maskPhone(owner.phone))}, ${tx('личный кабинет. Запрос действует 15 минут.','hesap. Talep 15 dakika geçerlidir.')}</p>
+      <div class="notice small"><b>${tx('Демо.','Demo.')}</b> ${tx('Чтобы ответить за владельца, войдите под его ID в другой вкладке или здесь:','Bilgi sahibi adına yanıt vermek için başka bir sekmede veya burada onun ID\'siyle giriş yapın:')} <button class="btn sm" type="button" data-as="${esc(owner.id)}">${tx('Войти как владелец и ответить','Sahibi olarak giriş yap ve yanıtla')}</button></div>`;
+    else if(r.status==='approved'){const wm=Array(40).fill(`${esc(r.requesterLabel)} · ${fmtDT(r.decidedAt)}`).map(t=>`<span>${t}</span>`).join('');
+      body=`<div class="reveal"><div class="wm">${wm}</div>
+        <div class="row between" style="position:relative"><span class="pill good">${tx('Владелец разрешил просмотр','Sahibi görüntülemeye izin verdi')}</span><div style="text-align:right"><div class="small muted">${tx('Данные скроются через','Bilgiler gizlenecek:')}</div><div class="timer" data-exp="${r.expiresAt}">${mmss(r.expiresAt-Date.now())}</div></div></div>
+        <div class="bar" style="margin:10px 0 14px;position:relative"><i data-bar="${r.expiresAt}" style="width:${Math.max(0,(r.expiresAt-Date.now())/VIEW_MS*100)}%"></i></div>
+        <dl class="kv" style="position:relative"><dt>${tx('Имя и фамилия','Ad soyad')}</dt><dd>${esc(fio(owner))}</dd><dt>${tx('Дата и место рождения','Doğum tarihi ve yeri')}</dt><dd>${fmtDate(owner.birth)}, ${esc(owner.birthPlace||'')}</dd><dt>${tx('Идентификационный №','Kimlik numarası')}</dt><dd>${esc(idLine(owner))}</dd><dt>${tx('Документ','Belge')}</dt><dd>${esc(docLine(owner))}</dd><dt>${tx('Адрес регистрации','Yerleşim yeri adresi')}</dt><dd>${esc(owner.addr)}</dd><dt>${tx('Роль в договоре','Sözleşmedeki rolü')}</dt><dd>${roleUI(r.role)}, ${tx('договор №','sözleşme no')} ${esc(c?.no)}</dd></dl>
+        <p class="small muted" style="position:relative;margin-top:10px">${tx('Контакты владельца не раскрываются. Просмотр записан в журнал доступа.','Sahibinin iletişim bilgileri gösterilmez. Görüntüleme erişim kaydına işlendi.')}</p></div>`;}
+    else if(r.status==='expired')body=`<p>${tx('Время просмотра истекло, данные скрыты. Чтобы увидеть их снова, отправьте новый запрос.','Görüntüleme süresi doldu, bilgiler gizlendi. Tekrar görmek için yeni talep gönderin.')}</p>`;
+    else if(r.status==='denied')body=`<p>${tx('Владелец отклонил запрос. Если данные нужны для суда или исполнения договора, обратитесь к владельцу напрямую или через уполномоченный орган.','Bilgi sahibi talebi reddetti. Bilgiler dava veya sözleşmenin ifası için gerekiyorsa sahibine doğrudan ya da yetkili kurum aracılığıyla başvurun.')}</p>`;
+    else if(r.status==='revoked')body=`<p>${tx('Владелец отозвал доступ досрочно. Данные скрыты.','Bilgi sahibi erişimi süre dolmadan geri aldı. Bilgiler gizlendi.')}</p>`;
+    else body=`<p>${tx('Владелец не ответил за 15 минут. Запрос закрыт.','Bilgi sahibi 15 dakika içinde yanıt vermedi. Talep kapatıldı.')}</p>`;
+    return `<div class="req ${r.status==='approved'?'live':r.status==='pending'?'attn':''}"><div class="row between"><div class="row"><span class="code">${esc(r.id2)}</span><span class="pill ${st[1]}">${pick2(st[0])}</span></div><span class="small muted">${fmtDT(r.createdAt)}</span></div>${body}</div>`;
+  }).join('');
+  box.querySelectorAll('[data-as]').forEach(b=>b.onclick=()=>{setMe(b.dataset.as);location.hash='cabinet'});
+}
+
+function updateTimers(){
+  const n=Date.now();
+  document.querySelectorAll('[data-exp]').forEach(el=>el.textContent=mmss(+el.dataset.exp-n));
+  document.querySelectorAll('[data-bar]').forEach(el=>el.style.width=Math.max(0,(+el.dataset.bar-n)/VIEW_MS*100)+'%');
+}
+function softRender(){if(view==='cabinet')viewCabinet();else if(view==='check')renderMyReqs();}
+
+/* ---------- router ---------- */
+function route(keepScroll){
+  const h=decodeURIComponent(location.hash.slice(1))||'home';
+  sweep();
+  if(h.startsWith('check-')){view='check';viewArg=normId(h.slice(6))}
+  else if(h.startsWith('doc-')){view='doc';viewArg=h.slice(4)}
+  else if(h.startsWith('tpl-')){view='templates';viewArg=h.slice(4)}
+  else{view=['home','templates','register','cabinet','new','check'].includes(h)?h:'home';viewArg=null}
+  renderChrome();
+  ({home:viewHome,templates:()=>viewTemplates(viewArg),register:viewRegister,cabinet:viewCabinet,new:viewNew,check:()=>viewCheck(viewArg),doc:()=>viewDoc(viewArg)})[view]();
+  if(keepScroll!==true)window.scrollTo(0,0);
+}
+
+/* ---------- seed ---------- */
+function seed(){
+  S=emptyState();
+  const a=addUser({first:'Ayşe',last:'Yılmaz',middle:'',birth:'1979-03-21',birthPlace:'İzmir',citizenship:'TR',idNo:idCheck('104567891'),taxNo:'',docIdx:0,docType:'T.C. Kimlik Kartı',docNo:'A12Z34567',docValid:'2031-03-21',addr:'Antalya, Muratpaşa, Şirinyalı Mah. 1520 Sok. No: 8 D: 3',email:'ayse.test@example.com',phone:'+90 532 000 11 22',consentAt:Date.now(),demo:true});
+  const b=addUser({first:'Marat',last:'Demirov',middle:'',birth:'1992-09-03',birthPlace:'Kazan, Rusya',citizenship:'foreign',idNo:idCheck('991234567'),taxNo:'',docIdx:1,docType:'İkamet İzni',docNo:'A01234567',docValid:'2028-09-01',addr:'Antalya, Muratpaşa, Fener Mah. 1950 Sok. No: 12 D: 5',email:'marat.test@example.com',phone:'+90 532 000 33 44',consentAt:Date.now(),demo:true});
+  const st=addDays(-20);
+  const terms={address:F.address.ex,tapu:F.tapu.ex,area:95,rooms:'2+1',residents:1,pets:'1',utilities:'0',startDate:st,endDate:addMonthsISO(st,12),rent:35000,payDay:5,deposit:70000,indexCap:25,city:'Antalya'};
+  const c=createContract('residential',terms,{landlord:a.id,tenant:b.id},a.id,true);S.demoContract=c.id;S.outbox=[];save();
+}
+if(!S||!S.users||S.v!==3)seed();
+if(me&&!S.users[me])setMe(null);
+
+let resetArm=false;
+$('#resetBtn').onclick=e=>{if(!resetArm){resetArm=true;e.target.textContent=tx('Нажмите ещё раз для сброса','Sıfırlamak için tekrar tıklayın');setTimeout(()=>{resetArm=false;e.target.textContent=tx('Сбросить демо-данные','Demo verilerini sıfırla')},4000);return}
+  resetArm=false;seed();setMe(null);myReqs=[];saveMyReqs();location.hash='home';route();toast(tx('Демо-данные восстановлены','Demo verileri geri yüklendi'))};
+window.addEventListener('hashchange',()=>route());
+window.addEventListener('storage',e=>{if(e.key===KEY){const n=load();if(n){S=n;softRender()}}});
+setInterval(()=>{if(sweep())softRender();updateTimers()},1000);
+route();
+</script>
+
+</body>
+</html>
